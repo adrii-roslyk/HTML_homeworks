@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: aliceblue;
+    line-height: 1.5;
+}
+
+li {
+    list-style: square;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: maroon;
+    font-weight: 700;
+}
+
+img {
+    width: 300px;
+    height: auto;
+}
+
+section {
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+h3 {
+    margin-bottom: 15px;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+.title {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.photo {
+    float: left;
+    margin-right: 60px;
+    margin-bottom: 20px;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+
+
+
+
+
+
+
