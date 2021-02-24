@@ -5,77 +5,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Metro Blog</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <div class="wrapper">
-            <div class="logo">
-                <img src="#" alt="#">
-            </div>
-            <nav class="menu">
-                <ul>
-                    <li clss="menu__item">
-                        <a href="#">Home</a>
-                    </li>
-                    <li clss="menu__item">
-                        <a href="#">About</a>
-                    </li>
-                    <li clss="menu__item">
-                        <a href="#">Articles</a>
-                    </li>
-                    <li clss="menu__item">
-                        <a href="#">Pages</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="headerBlock">
+                <div class="logo">
+                    <img src="img/logo.png" alt="logo">
+                </div>
+                <nav class="menu">
+                    <ul>
+                        <li class="menu__item menu__item-active">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#">About</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#">Articles</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#">Pages</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>    
         </div>
     </header>
     <main>
         <div class="wrapper">
             <div class="bannerBlock">
                 <div class="bannerTextContent">
-                    <h1 class="bannerTextContent__title">Apple iPad</h1>
+                    <h2 class="bannerTextContent__title">Apple iPad</h2>
                     <div class="bannerTextContent__link">
                         <a href="#">Reviews</a>
                     </div>                                      
                     <div class="bannerTextContent__userAction">
                         <div class="userAction__icon">
-                            <img src="#" alt="#">
+                            <img src="img/icon_videocam.png" alt="icon videocam">
                         </div>
                         <p class="userAction__text">Video review</p>
                     </div>
                 </div>
                 <div class="bannerImageContent">
-                    <img src="#" alt="#">
+                    <img src="img/bunner_ipad.jpg" alt="main banner">
                 </div>
             </div>
             <div class="contentBlock">
                 <div class="articles">
                     <article class="mainArticle">
-                        <div class="mainArticle__banner"></div>                          
-                        <div class="mainArticle__content">
-                            <h2>Lorem Ipsum is simply <a href="#">cssauthor.com</a></h2>
-                            <p>
+                        <div class="articleBanner">
+                            <div class="articleBanner__wrapper">
+                                <div class="articleBanner__background">
+                                    <img src="img/main_article_background.jpg" alt="main article background">
+                                </div>
+                                <div class="articleBanner__iPadIcon">
+                                    <img src="img/icon_iPad.png" alt="icon iPad">
+                                </div>
+                                <div class="articleBanner__iMacIcon">
+                                    <img src="img/icon_iMac.png" alt="icon iMac">
+                                </div>
+                            </div>
+                        </div>                          
+                        <div class="articleContent">
+                            <h2 class="articleContent__title">Lorem Ipsum is simply <a href="#">cssauthor.com</a></h2>
+                            <p class="articleContent__text">
                                 Lorem Ipsum is simply dummy text of the printing and 
                                 typesetting industry. Lorem Ipsum has been the industry's 
                                 standard dummy text ever since the 1500s, when an unknown 
                                 printer took a galley of type and scrambled it to make 
                                 a type specimen book. It has survived not only five centuries
                             </p>
-                            <div class="arrowManager">
-                                <div>
-                                    <img src="#" alt="">
+                            <div class="switch">
+                                <div class="switch__arrow switch__arrow-left">
+                                    <img src="img/arrow_left.png" alt="left arrow">
                                 </div>
-                                <div>
-                                    <img src="#" alt="">
+                                <div class="switch__arrow switch__arrow-right">
+                                    <img src="img/arrow_right.png" alt="right arrow">
                                 </div>
                             </div>
                         </div>
                     </article>
                     <div class="allArticles">
                         <article class="article">
-                            <h3 class="article_title">Apple iPhone variations</h3>
-                            <p class="article__meta">30/12/12 By : Mariya</p>
+                            <h2 class="article_title">Apple i phone variations</h2>
+                            <p class="article__meta">30/12/12 &nbsp; By : Mariya</p>
                             <p class="article__text">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting 
                                 industry. Lorem Ipsum has been the industry's standard dummy text 
@@ -83,8 +99,8 @@
                             </p>
                         </article>
                         <article class="article">
-                            <h3 class="article_title">The standard chunk Lorem Ipsum</h3>
-                            <p class="article__meta">30/12/12 By : Andriana Solorzana</p>
+                            <h2 class="article_title">The standard chunk Lorem Ipsum</h2>
+                            <p class="article__meta">30/12/12 &nbsp; By : Andriana Solorzana</p>
                             <p class="article__text">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting 
                                 industry. Lorem Ipsum has been the industry's standard dummy text 
@@ -92,8 +108,8 @@
                             </p>
                         </article>
                         <article class="article">
-                            <h3 class="article_title">This book is one of treatise</h3>
-                            <p class="article__meta">30/12/12 By : Andriana Solorzana</p>
+                            <h2 class="article_title">This book is one of treatise</h2>
+                            <p class="article__meta">30/12/12 &nbsp; By : Andriana Solorzana</p>
                             <p class="article__text">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting 
                                 industry. Lorem Ipsum has been the industry's standard dummy text 
@@ -101,8 +117,8 @@
                             </p>
                         </article>
                         <article class="article">
-                            <h3 class="article_title">Apple iPhone variations</h3>
-                            <p class="article__meta">30/12/12 By : Mariya</p>
+                            <h2 class="article_title">Apple i phone variations</h2>
+                            <p class="article__meta">30/12/12 &nbsp; By : Mariya</p>
                             <p class="article__text">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting 
                                 industry. Lorem Ipsum has been the industry's standard dummy text 
@@ -110,8 +126,8 @@
                             </p>
                         </article>
                         <article class="article">
-                            <h3 class="article_title">The standard chunk Lorem Ipsum</h3>
-                            <p class="article__meta">30/12/12 By : Andriana Solorzana</p>
+                            <h2 class="article_title">The standard chunk Lorem Ipsum</h2>
+                            <p class="article__meta">30/12/12 &nbsp; By : Andriana Solorzana</p>
                             <p class="article__text">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting 
                                 industry. Lorem Ipsum has been the industry's standard dummy text 
@@ -119,8 +135,8 @@
                             </p>
                         </article>
                         <article class="article">
-                            <h3 class="article_title">This book is one of treatise</h3>
-                            <p class="article__meta">30/12/12 By : Andriana Solorzana</p>
+                            <h2 class="article_title">This book is one of treatise</h2>
+                            <p class="article__meta">30/12/12 &nbsp; By : Andriana Solorzana</p>
                             <p class="article__text">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting 
                                 industry. Lorem Ipsum has been the industry's standard dummy text 
@@ -128,8 +144,8 @@
                             </p>
                         </article>
                         <article class="article">
-                            <h3 class="article_title">Apple iPhone variations</h3>
-                            <p class="article__meta">30/12/12 By : Mariya</p>
+                            <h2 class="article_title">Apple i phone variations</h2>
+                            <p class="article__meta">30/12/12 &nbsp; By : Mariya</p>
                             <p class="article__text">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting 
                                 industry. Lorem Ipsum has been the industry's standard dummy text 
@@ -137,8 +153,8 @@
                             </p>
                         </article>
                         <article class="article">
-                            <h3 class="article_title">The standard chunk Lorem Ipsum</h3>
-                            <p class="article__meta">30/12/12 By : Andriana Solorzana</p>
+                            <h2 class="article_title">The standard chunk Lorem Ipsum</h2>
+                            <p class="article__meta">30/12/12 &nbsp; By : Andriana Solorzana</p>
                             <p class="article__text">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting 
                                 industry. Lorem Ipsum has been the industry's standard dummy text 
@@ -146,8 +162,8 @@
                             </p>
                         </article>
                         <article class="article">
-                            <h3 class="article_title">This book is one of treatise</h3>
-                            <p class="article__meta">30/12/12 By : Andriana Solorzana</p>
+                            <h2 class="article_title">This book is one of treatise</h2>
+                            <p class="article__meta">30/12/12 &nbsp; By : Andriana Solorzana</p>
                             <p class="article__text">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting 
                                 industry. Lorem Ipsum has been the industry's standard dummy text 
@@ -159,17 +175,19 @@
                 <aside class="sidebar">
                     <div class="topSidebar">
                         <div class="topSidebarTxt">
-                            <p class="topSidebarTxt__topRow">The ultimate apple</p>
+                            <h2 class="topSidebarTxt__topRow">The ultimate apple</h2>
                             <p class="topSidebarTxt__bottomRow">i pad Guide</p>
                         </div>
-                        <div class="topSidebarImg topSidebarImg_bigTablet">
-                            <img src="#" alt="#">
-                        </div>
-                        <div class="topSidebarImg topSidebarImg_smallTablet">
-                            <img src="#" alt="#">
-                        </div>
-                        <div class="topSidebarImg topSidebarImg_cssIcon">
-                            <img src="#" alt="#">
+                        <div class="topSidebarImgs">
+                            <div class="topSidebarImgs__item topSidebarImgs__item-big">
+                                <img src="img/big_iPad.png" alt="big iPad">
+                            </div>
+                            <div class="topSidebarImgs__item topSidebarImgs__item-small">
+                                <img src="img/small_iPad.png" alt="small iPad">
+                            </div>
+                            <div class="topSidebarImgs__item topSidebarImgs__item-css">
+                                <img src="img/icon_css.png" alt="icon css">
+                            </div>   
                         </div>
                     </div>
                     <div class="midSidebar">
@@ -177,25 +195,21 @@
                             <p class="round__top">12</p>
                             <p class="round__bottom">WEEK</p>
                         </div>
-                        <h1 class="midSidebar__title">Lorem Ipsum</h1>
+                        <h2 class="midSidebar__title">LOREM IPSUM</h2>
                         <p class="midSidebar__subtitle">Lorem Ipsum is simply<br>dummy</p>
-                        <form class="midSidebar__button">                                
-                            <input type="submit" value="JOIN US NOW!">
+                        <form class="form">                                
+                            <input class="form__button form__button-blue" type="submit" value="JOIN US NOW!">
                         </form>
                     </div>
                     <div class="bottomSidebar">
-                        <h1 class="bottomSidebar__title">JOIN OUR MAILING</h1>
+                        <h2 class="bottomSidebar__title">JOIN OUR MAILING</h2>
                         <p class="bottomSidebar__subtitle">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                         </p>
                         <form class="bottomSidebar__form form">
-                            <div class="form__accountInfo">
-                                <input type="text" placeholder=" Name">
-                                <input type="email" placeholder=" email address">
-                            </div>
-                            <div class="form__accountAction">
-                                <input type="submit" value="SIGN ME UP!">
-                            </div>
+                            <input class="form__input" type="text" placeholder=" Name">
+                            <input class="form__input" type="email" placeholder=" Email address">                                                    
+                            <input class="form__button form__button-red" type="submit" value="SIGN ME UP!">                          
                         </form>
                     </div>
                 </aside>
@@ -204,20 +218,22 @@
     </main>
     <footer>
         <div class="wrapper">
-            <p class="copyright">
-                All Rights Reserved to <a href="#">cssauthor.com</a>
-            </p>    
-            <ul class="socialIcons">
-                <li class="socialIcons__item">
-                    <a href="#"><img src="#" alt="#"></a>
-                </li>
-                <li class="socialIcons__item">
-                    <a href="#"><img src="#" alt="#"></a>
-                </li>
-                <li class="socialIcons__item">
-                    <a href="#"><img src="#" alt="#"></a>
-                </li>
-            </ul>           
+            <div class="footerBlock">
+                <p class="copyright">
+                    All Rights Reserved to <a href="#">cssauthor.com</a>
+                </p>    
+                <ul class="socialIcons">
+                    <li class="socialIcons__item">
+                        <a href="#"><img src="img/facebook.png" alt="facebook"></a>
+                    </li>
+                    <li class="socialIcons__item">
+                        <a href="#"><img src="img/twitter.png" alt="twitter"></a>
+                    </li>
+                    <li class="socialIcons__item">
+                        <a href="#"><img src="img/youtube.png" alt="youtube"></a>
+                    </li>
+                </ul>    
+            </div>                 
         </div>
     </footer>
 </body>
