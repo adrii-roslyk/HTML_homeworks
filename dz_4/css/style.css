@@ -1,0 +1,131 @@
+/*normalize*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Myriad Pro Regular', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.wrapper {
+    max-width: 1118px;
+    margin: 50px auto;
+}
+/*end normalize*/
+
+/*mixins*/
+.title {
+    font-family: 'Myriad Pro Bold', sans-serif;
+}
+/*end mixins*/
+
+/*map-block*/
+.map-block {
+    margin: auto;
+    width: 1118px;
+    height: 752px;
+    background-image: url('../img/map.jpg');
+    background-size: auto;
+    background-repeat: no-repeat; 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; 
+}
+
+.map-block__item {
+    flex-basis: 50%;
+}
+
+.map-block__item--blue {
+    background-color: rgba(0, 54, 99, 0.749);
+    flex-basis: 100%;
+}
+
+.map-block__item--purple {
+    background-color: rgba(99, 4, 96, 0.749);
+}
+
+.map-block__item--red {
+    background-color: rgb(158, 11, 15, 0.749);
+    order: 1;
+}
+
+.map-block__item--yellow {
+    background-color: rgba(255, 242, 0, 0.749);
+}
+
+.map-block__item--orange {
+    background-color: rgba(247, 148, 29, 0.749);
+    order: 1;
+}
+
+/*continent block*/
+.continent {
+    padding: 10px 25px 0; 
+    width: 33.33%;       
+}
+
+.continent__name {
+    font-size: 38px;
+    text-align: center;
+    padding-bottom: 2px;
+}
+
+/*country block*/
+.country {
+    background-color: rgba(42, 42, 42, 0.341);
+}
+
+.country__infobox {
+    display: flex;
+    align-items: center;
+}
+
+.country__name {
+    padding-left: 15px;
+    font-size: 30px;
+}
+
+/*cities block*/
+.cities {
+    padding: 27px 0 23px 17px;
+}
+
+.cities__title {
+    font-size: 26px;
+    margin-bottom: 21px;
+}
+
+.cities__item {
+    margin-bottom: 13px;
+}
+
+/*city block*/
+.city {
+    display: flex;  
+    align-items: center;  
+}  
+
+.city__name {
+    font-size: 20px;
+    padding-left: 10px;
+}
+/*end city block*/
+/*end cities block*/
+/*end country block*/
+/*end continent block*/
+/*end map block*/  
+  
+  
+  
+  
