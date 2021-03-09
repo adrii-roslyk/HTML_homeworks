@@ -1,131 +1,147 @@
-/*normalize*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
-    font-family: 'Myriad Pro Regular', sans-serif;
-    font-weight: 400;
-    color: #ffffff;
+  font-family: "Myriad Pro Regular", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
 }
 
 img {
-    display: block;
-    width: 100%;
-    height: auto;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .wrapper {
-    max-width: 1118px;
-    margin: 50px auto;
+  max-width: 1118px;
+  margin: 50px auto;
 }
-/*end normalize*/
 
-/*mixins*/
 .title {
-    font-family: 'Myriad Pro Bold', sans-serif;
+  font-family: "Myriad Pro Bold", sans-serif;
 }
-/*end mixins*/
 
-/*map-block*/
+.continent-box {
+  -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+  width: 33.33%;
+}
+
+.city-box {
+  margin-bottom: 13px;
+}
+
 .map-block {
-    margin: auto;
-    width: 1118px;
-    height: 752px;
-    background-image: url('../img/map.jpg');
-    background-size: auto;
-    background-repeat: no-repeat; 
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column; 
+  margin: auto;
+  width: 100%;
+  height: 752px;
+  background-image: url("../img/map.jpg");
+  -webkit-background-size: auto auto;
+          background-size: auto;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.map-block__item {
-    flex-basis: 50%;
-}
-
-.map-block__item--blue {
-    background-color: rgba(0, 54, 99, 0.749);
-    flex-basis: 100%;
-}
-
-.map-block__item--purple {
-    background-color: rgba(99, 4, 96, 0.749);
-}
-
-.map-block__item--red {
-    background-color: rgb(158, 11, 15, 0.749);
-    order: 1;
-}
-
-.map-block__item--yellow {
-    background-color: rgba(255, 242, 0, 0.749);
-}
-
-.map-block__item--orange {
-    background-color: rgba(247, 148, 29, 0.749);
-    order: 1;
-}
-
-/*continent block*/
 .continent {
-    padding: 10px 25px 0; 
-    width: 33.33%;       
+  padding: 10px 25px 0;
+}
+
+.continent--blue {
+  background-color: rgba(0, 54, 99, 0.749);
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+}
+
+.continent--purple {
+  background-color: rgba(99, 4, 96, 0.749);
+}
+
+.continent--red {
+  background-color: rgba(158, 11, 15, 0.749);
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.continent--yellow {
+  background-color: rgba(255, 242, 0, 0.749);
+}
+
+.continent--orange {
+  background-color: rgba(247, 148, 29, 0.749);
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
 }
 
 .continent__name {
-    font-size: 38px;
-    text-align: center;
-    padding-bottom: 2px;
+  font-size: 38px;
+  text-align: center;
+  padding-bottom: 2px;
 }
 
-/*country block*/
-.country {
-    background-color: rgba(42, 42, 42, 0.341);
+.continent .country {
+  background-color: rgba(42, 42, 42, 0.341);
 }
 
-.country__infobox {
-    display: flex;
-    align-items: center;
+.continent .country__infobox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.country__name {
-    padding-left: 15px;
-    font-size: 30px;
+.continent .country__name {
+  padding-left: 15px;
+  font-size: 30px;
 }
 
-/*cities block*/
-.cities {
-    padding: 27px 0 23px 17px;
+.continent .country .cities {
+  padding: 27px 0 23px 17px;
 }
 
-.cities__title {
-    font-size: 26px;
-    margin-bottom: 21px;
+.continent .country .cities__title {
+  font-size: 26px;
+  margin-bottom: 21px;
 }
 
-.cities__item {
-    margin-bottom: 13px;
+.continent .country .city {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-/*city block*/
-.city {
-    display: flex;  
-    align-items: center;  
-}  
-
-.city__name {
-    font-size: 20px;
-    padding-left: 10px;
+.continent .country .city____name {
+  font-size: 20px;
+  padding-left: 10px;
 }
-/*end city block*/
-/*end cities block*/
-/*end country block*/
-/*end continent block*/
-/*end map block*/  
-  
-  
-  
-  
+/*# sourceMappingURL=style.css.map */

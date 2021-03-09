@@ -1,0 +1,18 @@
+.cities {
+    padding: 27px 0 23px 17px;
+
+    &__title {
+        font-size: $fntSizeGlbBig;
+        margin-bottom: 21px;
+    }
+}
+
+.city {
+    @include flex();
+
+    &____name {
+        font-size: $fntSizeGlbMed;
+        padding-left: 10px;
+    }
+}  
+

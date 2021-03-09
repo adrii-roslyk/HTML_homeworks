@@ -1,0 +1,13 @@
+.map-block {
+    margin: auto;
+    width: 100%;
+    height: 752px;
+    background-image: url('../img/map.jpg');
+    background-size: auto;
+    background-repeat: no-repeat; 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+@import './continent';

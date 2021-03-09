@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $fntFamilyGlobal;
+    font-weight: 400;
+    color: $txtColorGlobal;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.wrapper {
+    max-width: $wrapMaxWidth;
+    margin: 50px auto;
+}

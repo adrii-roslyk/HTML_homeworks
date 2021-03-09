@@ -1,0 +1,14 @@
+.country {
+    background-color: $countryBgColor;
+
+    &__infobox {
+        @include flex();    
+    }
+
+    &__name {
+        padding-left: 15px;
+        font-size: $fntSizeTtlMed;
+    }
+
+    @import './cities';
+}
