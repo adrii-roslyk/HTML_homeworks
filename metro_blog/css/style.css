@@ -35,7 +35,7 @@ img {
 /*end normalize*/
 
 /*header block*/
-header {
+.pageHeader {
     border-bottom: 1px solid #e5e5e5;
 }
 
@@ -62,16 +62,17 @@ header {
 }
 
 .menu__item a {
+    display: block;
     padding: 2px 20px 6px;
     color: #323332;
     font-size: 1.4375rem;   
     font-weight: 700; 
+    transition: transform .3s ease-out;
+    will-change: transform;
 }
 
-.menu__item a:hover, 
-.menu__item-active a {    
-    font-family: 'Segoe WP N', sans-serif;
-    font-weight: 500;
+.menu__item a:hover {  
+    transform: scale(1.1); 
     background: #373737;
     color: #ffffff;
 }
@@ -85,7 +86,7 @@ header {
 
 .bannerTextContent {
     width: 30%;
-    margin: 10.3125rem 0 0 1rem;
+    padding: 10.3125rem 0 0 1rem;
 }
 
 .bannerTextContent__title, 
@@ -102,8 +103,12 @@ header {
     margin-top: -7px;
 }
 
-.bannerTextContent__link a{
+.bannerTextContent__link a {
     font-size: 2.9375rem;
+}
+
+.bannerTextContent__link a:hover {
+    color: #000000;
 }
 
 .bannerTextContent__userAction {
@@ -113,7 +118,12 @@ header {
     align-items: center;
     width: 12.75rem;
     background-color: #373737;
+    transition: transform .3s ease-out;
+}
+
+.bannerTextContent__userAction:hover {
     cursor: pointer;
+    transform: scale(1.1);
 }
 
 .userAction__icon{
@@ -128,8 +138,16 @@ header {
 }
 
 .bannerImageContent {
-    margin-top: 7.25rem;
+    padding-top: 7.25rem;
     width: 70%;
+}
+
+.bannerImageContent img {
+    transition: transform .3s ease-out;
+}
+
+.bannerImageContent img:hover {
+    transform: scale(1.05);
 }
 /*end banner block*/
 
@@ -195,6 +213,10 @@ header {
     color: #696161;
 }
 
+.articleContent__title a:hover {
+    color: #000000;
+}
+
 .articleContent__text {
     font-size: 0.875rem;
     font-weight: 600;
@@ -212,19 +234,18 @@ header {
 }
 
 .switch__arrow {
+    margin: 0 0.5px;
     width: 2rem;
     height: 2.4375rem;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.switch__arrow-left {
-    background-color: #848484;
-}
-
-.switch__arrow-right {
     background-color: #989998;
+}
+
+.switch__arrow:hover {
+    cursor: pointer;
+    background-color: #848484;
 }
 /*end main articles block*/
 
@@ -238,7 +259,7 @@ header {
 
 .article {
     flex-basis: 13.4375rem;
-    margin-bottom: 2.875rem;
+    padding-bottom: 2.875rem;
 }
 
 .article_title {
@@ -277,7 +298,7 @@ header {
 }
 
 .topSidebarTxt {
-    margin-bottom: 0.6875rem;
+    padding-bottom: 0.6875rem;
 }
 
 .topSidebarTxt__topRow {
@@ -287,12 +308,16 @@ header {
     color: #9ba08d;
 }
 
-.topSidebarTxt__bottomRow {
+.topSidebarTxt__bottomRow a {
     font-size: 2.4375rem;
     font-weight: 700;
     line-height: 2.4375rem;
     letter-spacing: 1px;
     color: #b8dc58;
+}
+
+.topSidebarTxt__bottomRow a:hover {
+    color: #000000;
 }
 
 .topSidebarImgs {
@@ -301,11 +326,12 @@ header {
 }
 
 .topSidebarImgs__item-small {
-    margin: 3.5625rem 0 0 -4.0625rem; 
+    margin-left: -4.0625rem;
+    padding-top: 3.5625rem; 
 }
 
 .topSidebarImgs__item-css {
-    margin: 114px 4px 0 0;
+    padding: 114px 4px 0 0;
 }
 /*end top sidebar block*/
 
@@ -374,7 +400,13 @@ header {
 }
 
 .form__button-blue {
-    background-color: #58d1dc;  
+    background-color: #58d1dc; 
+    transition: transform .3s ease-out; 
+}
+
+.form__button-blue:hover {
+    transform: scale(1.05);
+    color: #000000;
 }
 /*end middle sidebar block*/
 
@@ -404,7 +436,7 @@ header {
     text-align: left;
 }
 
-.bottomSidebar__form {
+.form-transmit {
     height: 6.875rem;    
     display: flex;
     flex-direction: column;
@@ -420,13 +452,19 @@ header {
 
 .form__button-red {
     background-color: #bb4465;
+    transition: transform .3s ease-out;
+}
+
+.form__button-red:hover {
+    transform: scale(1.05);
+    color: #000000;
 }
 /*end bottom sidebar block*/
 /*end sidebar block*/
 /*end content block*/
 
 /*footer block*/
-footer {
+.pageFooter {
     margin-top: 0.625rem;
     background-color: #393a39;
 }    
@@ -447,11 +485,27 @@ footer {
     margin-right: 17.8125rem;
 }
 
+.copyright a:hover {
+    color: #b6b6b6;
+}
+
 .socialIcons {
     display: flex;
     justify-content: space-between;
     width: 11%;
     max-width: 112px;
+}
+
+.socialIcons__item-facebookColor:hover {
+    background: radial-gradient(circle closest-side, #3a5ba6 26px, #393a39 26px);
+}
+
+.socialIcons__item-twitterColor:hover {
+    background: radial-gradient(circle closest-side, #1a91da 26px, #393a39 26px);
+}
+
+.socialIcons__item-youTubeColor:hover {
+    background: linear-gradient(#393a39 2px, #ff0000 2px, #ff0000 26px, #393a39 26px);
 }
 /*end footer block*/
 
