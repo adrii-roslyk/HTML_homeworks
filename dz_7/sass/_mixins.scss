@@ -1,0 +1,21 @@
+@mixin fontTtlForm($fs: 25px) {
+    font: {
+        family: 'Roboto Medium', sans-serif;
+        size: $fs;
+    }
+    
+}
+
+@mixin fontTxtForm($fs: 15px, $fw: 600) {
+    font: {
+        family: 'Roboto Regular', sans-serif;
+        size: $fs;
+        weight: $fw;
+    }
+}
+
+@mixin flex($jc: flex-start) {
+    display: flex;
+    justify-content: $jc;
+}
+

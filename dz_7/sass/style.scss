@@ -1,0 +1,234 @@
+@import './fonts';
+@import './vars'; 
+@import './mixins';
+@import './placeholders';
+@import './normalize';
+
+.form {
+    @include fontTxtForm;
+    box-shadow: 2px 2px 7px 0px $shadowColor;
+    background-color: $formBgColor;
+    text-align: center;
+    padding: $formPadding;
+
+    &--auth {
+        max-width: 280px;
+        margin: 0 auto 50px; 
+    }
+
+    &--vacancy {
+        max-width: 605px;
+        margin: 0 auto;
+    }
+
+    &__wrapper {
+        @include flex(space-between);
+        flex-wrap: wrap;
+    }
+
+    &__title {
+        padding-bottom: 15px;
+    }
+    
+    &__title--big {
+        @include fontTtlForm;               
+    }
+
+    &__title--med {
+        @include fontTtlForm(20px);
+        width: 100%;
+    }
+
+    &__title--small {
+        @include fontTtlForm(17px);
+        text-align: left;
+    }
+    
+    &__container {
+        max-width: 280px;
+        width: 100%;
+        border: 1px solid $containBrdColor {
+            radius: 5px;
+        }
+        padding: $formPadding;
+        margin-bottom: 15px;
+
+        &--bottom {
+            @include flex(space-around);
+            flex-wrap: wrap;
+            max-width: 575px;
+            padding: 15px 15px 0;
+        }
+    }
+
+    &__section {
+        max-width: 280px;
+        padding: 0 15px 15px;
+    }
+
+    &__input {
+        max-width: 200px;
+        margin: 0 auto;
+        padding-bottom: 15px
+    }
+
+    &__button {
+        @include flex(center);        
+    }
+}
+
+.input-text {
+    display: flex;
+    flex-direction: column;
+
+    &__name {
+        text-align: left;
+        padding-bottom: 2px; 
+    }
+
+    &__data {
+        @include fontTxtForm(15px, 400);
+        padding: 10px;        
+        box-shadow: inset 1px 1px 5px 0px $shadowColor;
+        color: #000000;
+        border: none;
+
+        &--date {
+            padding: 8px 10px;
+        }
+
+        &--select {
+            padding: 9px 10px;
+        }
+
+        &--txtarea {
+            display: block;
+            width: 200px;
+            margin: -8px 0 10px;
+            resize: none;
+        }
+
+        &:hover {
+            box-shadow: inset 1px 1px 5px 0px $inpActionColor;
+        }
+
+        &:valid {
+            background-color: $validColor;
+        }
+
+        &:invalid:not(:focus):not(:placeholder-shown) {
+            background-color: $invalidColor;
+        }
+
+        &:focus {
+            outline: 1px solid $inpActionColor;
+            box-shadow: inset 1px 1px 5px 0px $inpActionColor; 
+            background-color: $focusColor;
+        }
+    }
+}
+
+.input-flag {
+    @include flex;
+    align-items: center;
+    padding-bottom: 11px;
+    position: relative;
+    width: fit-content;
+    
+    &__choice {
+        display: none;      
+             
+        &:checked + span {
+            background: $checkedColor;
+        }
+
+        &:checked + span:after {
+            display: block;
+        }
+    }
+
+    &__checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 17px;
+        width: 17px;
+        background: $checkmarkColor;
+        
+        &--radio {
+            border-radius: 50%;
+
+            &:after {
+                @extend %checkmark-after;
+                top: 0;
+                left: 0;
+                width: 5px;
+                height: 5px;
+                border: 6px solid $checkedColor {
+                    radius: 50%;
+                }
+                background: $focusColor;
+            }
+        }
+        
+        &--checkbox {
+                
+            &:after {
+                @extend %checkmark-after;
+                top: 2px;
+                left: 7px;
+                width: 3px;
+                height: 8px;
+                border: solid $focusColor {
+                    width: 0 2px 2px 0;
+                }
+                transform: rotate(45deg);        
+            }
+        }
+    }
+
+    &__name {
+        padding-left: 24px;
+    }
+
+    &:hover {
+        cursor: pointer;
+
+        input + span {
+            background: $hoverColor;                
+        }
+    }
+}
+
+.btn {
+    @include fontTxtForm;
+    display: block;
+    padding: 6px 12px 7px;
+    color: $btnNameColor;
+    box-shadow: 1px 1px 5px 0px $shadowColor;
+    border: none {
+        radius: 5px;
+    }
+    background: $btnGradient;
+    user-select: none;
+
+    &--left {
+        margin-right: 15px;
+    }
+    
+    &:hover {
+        cursor: pointer;
+        background: $hoverColor;
+        }
+    
+    &:focus {
+        outline: none;
+    }    
+
+    &:active {
+        outline: none;
+        box-shadow: none;
+        transform: translate(1px, 1px);
+    }         
+}
+

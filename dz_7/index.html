@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <form class="form form--auth" action="#" method="POST">
+            <h2 class="form__title form__title--big">Авторизация</h2>
+            <div class="form__input">
+                <label class="input-text">
+                    <span class="input-text__name">Логин:</span>
+                    <input class="input-text__data" type="text" name="login" placeholder="Введите логин" 
+                        minlength="4" maxlength="10" autofocus required>
+                </label>
+            </div>
+            <div class="form__input">
+                <label class="input-text">
+                    <span class="input-text__name">Пароль:</span>
+                    <input class="input-text__data" type="password" name="user_pass" placeholder="Введите пароль"
+                        minlength="6" maxlength="15" required>
+                </label>
+            </div>
+            <div class="form__button">
+                <button class="btn" type="submit">Отправить</button>
+            </div>
+        </form>
+        <form class="form form--vacancy" action="#" method="POST">
+            <h2 class="form__title form__title--big">Вакансия: Junior Front-End Developer</h2>
+            <div class="form__wrapper">
+                <fieldset class="form__container">
+                    <h3 class="form__title form__title--med">Личные данные</h3>
+                    <div class="form__input">
+                        <label class="input-text">
+                            <span class="input-text__name">Фамилия:</span>
+                            <input class="input-text__data" type="text" name="surname" placeholder="Введите фамилию"
+                                minlength="2" maxlength="20" required>
+                        </label>
+                    </div>
+                    <div class="form__input">
+                        <label class="input-text">
+                            <span class="input-text__name">Имя:</span>
+                            <input class="input-text__data" type="text" name="name" placeholder="Введите имя"
+                                minlength="2" maxlength="20" required>
+                        </label>
+                    </div>
+                    <div class="form__input">
+                        <label class="input-text">
+                            <span class="input-text__name">Отчество:</span>
+                            <input class="input-text__data" type="text" name="patronymic" placeholder="Введите отчество"
+                                minlength="2" maxlength="20" required>
+                        </label>
+                    </div>
+                    <div class="form__input">
+                        <label class="input-text">
+                            <span class="input-text__name">Дата рождения:</span>
+                            <input class="input-text__data input-text__data--date" type="date" name="date_birth">
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset class="form__container">
+                    <h3 class="form__title form__title--med">Контактные данные</h3>
+                    <div class="form__input">
+                        <label class="input-text">
+                            <span class="input-text__name">Телефон:</span>
+                            <input class="input-text__data" type="tel" name="phone" placeholder="+380112223344" required>
+                        </label>
+                    </div>
+                    <div class="form__input">
+                        <label class="input-text">
+                            <span class="input-text__name">Email:</span>
+                            <input class="input-text__data" type="email" name="email" placeholder="name@domain.com"
+                                required>
+                        </label>
+                    </div>
+                    <div class="form__input">
+                        <label class="input-text">
+                            <span class="input-text__name">Город проживания:</span>
+                            <select class="input-text__data input-text__data--select" name="city" required>
+                                <option value="dnipro">Днепр</option>
+                                <option value="kyiv" selected>Киев</option>
+                                <option value="lviv">Львов</option>
+                                <option value="odesa">Одесса</option>
+                                <option value="poltava">Полтава</option>
+                                <option value="kharkiv">Харьков</option>
+                            </select>
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset class="form__container form__container--bottom">
+                    <h3 class="form__title form__title--med">Квалификация</h3>
+                    <section class="form__section">
+                        <h4 class="form__title form__title--small">Опыт работы:</h4>
+                        <label class="input-flag">
+                            <input class="input-flag__choice" type="radio" name="exp" value="less_one" checked>
+                            <span class="input-flag__checkmark input-flag__checkmark--radio"></span>
+                            <span class="input-flag__name">< 1 года</span>
+                        </label>
+                        <label class="input-flag">
+                            <input class="input-flag__choice" type="radio" name="exp" value="one_two">
+                            <span class="input-flag__checkmark input-flag__checkmark--radio"></span>
+                            <span class="input-flag__name">1-2 года</span>
+                        </label>
+                        <label class="input-flag">
+                            <input class="input-flag__choice" type="radio" name="exp" value="more_two">
+                            <span class="input-flag__checkmark input-flag__checkmark--radio"></span>
+                            <span class="input-flag__name">> 2 лет</span>
+                        </label>
+                    </section>
+                    <section class="form__section">
+                        <h4 class="form__title form__title--small">Высшее образование</h4>
+                        <div class="form__descript">
+                            <label class="input-flag">
+                                <input class="input-flag__choice" type="radio" name="educ" value="yes" checked>
+                                <span class="input-flag__checkmark input-flag__checkmark--radio"></span>
+                                <span class="input-flag__name">Есть</span>
+                            </label>
+                            <label class="input-text">
+                                <textarea class="input-text__data input-text__data--txtarea" name="educ_descript" 
+                                    placeholder="Укажите вуз и специальность" minlength="10" maxlength="200"></textarea>
+                            </label>                            
+                        </div>
+                        <label class="input-flag">
+                            <input class="input-flag__choice" type="radio" name="educ" value="no">
+                            <span class="input-flag__checkmark input-flag__checkmark--radio"></span>
+                            <span class="input-flag__name">Нет</span>
+                        </label>
+                    </section>
+                    <section class="form__section">
+                        <h4 class="form__title form__title--small">Уровень владения английским языком:</h4>
+                        <label class="input-flag">
+                            <input class="input-flag__choice" type="radio" name="eng" value="elem" checked>
+                            <span class="input-flag__checkmark input-flag__checkmark--radio"></span>
+                            <span class="input-flag__name">A1 Elementary</span>
+                        </label>
+                        <label class="input-flag">
+                            <input class="input-flag__choice" type="radio" name="eng" value="pre-int">
+                            <span class="input-flag__checkmark input-flag__checkmark--radio"></span>
+                            <span class="input-flag__name">A2 Pre-intermediate</span>
+                        </label>
+                        <label class="input-flag">
+                            <input class="input-flag__choice" type="radio" name="eng" value="int">
+                            <span class="input-flag__checkmark input-flag__checkmark--radio"></span>
+                            <span class="input-flag__name">B1 Intermediate</span>
+                        </label>
+                        <label class="input-flag">
+                            <input class="input-flag__choice" type="radio" name="eng" value="upp-int">
+                            <span class="input-flag__checkmark input-flag__checkmark--radio"></span>
+                            <span class="input-flag__name">B2 Upper-intermediate</span>
+                        </label>
+                        <label class="input-flag">
+                            <input class="input-flag__choice" type="radio" name="eng" value="adv">
+                            <span class="input-flag__checkmark input-flag__checkmark--radio"></span>
+                            <span class="input-flag__name">C1 Advanced</span>
+                        </label>
+                    </section>
+                    <section class="form__section">
+                        <h4 class="form__title form__title--small">Технические навыки:</h4>
+                        <label class="input-flag">
+                            <input class="input-flag__choice" type="checkbox" name="technologies" value="html" checked>
+                            <span class="input-flag__checkmark input-flag__checkmark--checkbox"></span>
+                            <span class="input-flag__name">HTML5</span>
+                        </label>
+                        <label class="input-flag">
+                            <input class="input-flag__choice" type="checkbox" name="technologies" value="css" checked>
+                            <span class="input-flag__checkmark input-flag__checkmark--checkbox"></span>
+                            <span class="input-flag__name">CSS3</span>
+                        </label>
+                        <label class="input-flag">
+                            <input class="input-flag__choice" type="checkbox" name="technologies" value="sass">
+                            <span class="input-flag__checkmark input-flag__checkmark--checkbox"></span>
+                            <span class="input-flag__name">SASS/SCSS/LESS</span>
+                        </label>
+                        <label class="input-flag">
+                            <input class="input-flag__choice" type="checkbox" name="technologies" value="git">
+                            <span class="input-flag__checkmark input-flag__checkmark--checkbox"></span>
+                            <span class="input-flag__name">Git</span>
+                        </label>
+                        <label class="input-flag">
+                            <input class="input-flag__choice" type="checkbox" name="technologies" value="js" checked>
+                            <span class="input-flag__checkmark input-flag__checkmark--checkbox"></span>
+                            <span class="input-flag__name">JavaScript (basics)</span>
+                        </label>
+                        <label class="input-flag">
+                            <input class="input-flag__choice" type="checkbox" name="technologies" value="es">
+                            <span class="input-flag__checkmark input-flag__checkmark--checkbox"></span>
+                            <span class="input-flag__name">ES6+</span>
+                        </label>
+                        <label class="input-flag">
+                            <input class="input-flag__choice" type="checkbox" name="technologies" value="ts">
+                            <span class="input-flag__checkmark input-flag__checkmark--checkbox"></span>
+                            <span class="input-flag__name">TypeScript</span>
+                        </label>
+                        <label class="input-flag">
+                            <input class="input-flag__choice" type="checkbox" name="technologies" value="angular">
+                            <span class="input-flag__checkmark input-flag__checkmark--checkbox"></span>
+                            <span class="input-flag__name">Angular</span>
+                        </label>
+                        <label class="input-flag">
+                            <input class="input-flag__choice" type="checkbox" name="technologies" value="react">
+                            <span class="input-flag__checkmark input-flag__checkmark--checkbox"></span>
+                            <span class="input-flag__name">React</span>
+                        </label>
+                        <label class="input-flag">
+                            <input class="input-flag__choice" type="checkbox" name="technologies" value="vue">
+                            <span class="input-flag__checkmark input-flag__checkmark--checkbox"></span>
+                            <span class="input-flag__name">Vue.js</span>
+                        </label>
+                    </section>                    
+                </fieldset>
+            </div>
+            <div class="form__button">
+                <button class="btn btn--left" type="submit">Отправить</button>
+                <button class="btn" type="reset">Очистить</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
