@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'Lato';
+    src:
+        url('/fonts/Lato_Light.svg') format('svg'),
+        url('/fonts/Lato_Light.ttf') format('truetype'),
+        url('/fonts/Lato_Light.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Lato_Light.woff2') format('woff2'),
+        url('/fonts/Lato_Light.woff') format('woff');
+    font-weight: 300;    
+    font-style: normal;        
+}
+
+@font-face {
+    font-family: 'Lato';
+    src:
+        url('/fonts/Lato_Regular.svg') format('svg'),
+        url('/fonts/Lato_Regular.ttf') format('truetype'),
+        url('/fonts/Lato_Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Lato_Regular.woff2') format('woff2'),
+        url('/fonts/Lato_Regular.woff') format('woff');
+    font-weight: 400;    
+    font-style: normal;        
+}
+
+@font-face {
+    font-family: 'Lato';
+    src:
+        url('/fonts/Lato_Bold.svg') format('svg'),
+        url('/fonts/Lato_Bold.ttf') format('truetype'),
+        url('/fonts/Lato_Bold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Lato_Bold.woff2') format('woff2'),
+        url('/fonts/Lato_Bold.woff') format('woff');
+    font-weight: 700;    
+    font-style: normal;        
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src:
+        url('/fonts/Playfair_Display_Regular.svg') format('svg'),
+        url('/fonts/Playfair_Display_Regular.ttf') format('truetype'),
+        url('/fonts/Playfair_Display_Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Playfair_Display_Regular.woff2') format('woff2'),
+        url('/fonts/Playfair_Display_Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src:
+        url('/fonts/Playfair_Display_Bold.svg') format('svg'),
+        url('/fonts/Playfair_Display_Bold.ttf') format('truetype'),
+        url('/fonts/Playfair_Display_Bold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Playfair_Display_Bold.woff2') format('woff2'),
+        url('/fonts/Playfair_Display_Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src:
+        url('/fonts/Proxima_Nova_Regular.svg') format('svg'),
+        url('/fonts/Proxima_Nova_Regular.ttf') format('truetype'),
+        url('/fonts/Proxima_Nova_Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Proxima_Nova_Regular.woff2') format('woff2'),
+        url('/fonts/Proxima_Nova_Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src:
+        url('/fonts/Proxima_Nova_Semibold.svg') format('svg'),
+        url('/fonts/Proxima_Nova_Semibold.ttf') format('truetype'),
+        url('/fonts/Proxima_Nova_Semibold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Proxima_Nova_Semibold.woff2') format('woff2'),
+        url('/fonts/Proxima_Nova_Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src:
+        url('/fonts/Proxima_Nova_Extrabld.svg') format('svg'),
+        url('/fonts/Proxima_Nova_Extrabld.ttf') format('truetype'),
+        url('/fonts/Proxima_Nova_Extrabld.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Proxima_Nova_Extrabld.woff2') format('woff2'),
+        url('/fonts/Proxima_Nova_Extrabld.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Times New Roman';
+    src:
+        url('/fonts/Times_New_Roman.svg') format('svg'),
+        url('/fonts/Times_New_Roman.ttf') format('truetype'),
+        url('/fonts/Times_New_Roman.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Times_New_Roman.woff2') format('woff2'),
+        url('/fonts/Times_New_Roman.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}

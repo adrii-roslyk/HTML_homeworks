@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEN-X</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page">
+    <div class="bg-layer">
+        <img class="bg-layer__img" src="img/Layer_0.jpg">
+    </div>
+    <header class="page-header">
+        <div class="wrapper">
+            <div class="header-box">
+                <div class="navbar">
+                    <div class="navbar__row navbar__row--left">
+                        <div class="logo">
+                            <a class="logo__link" href="#">
+                                <img class="logo__img" src="img/logo.png" alt="logo">
+                                <img class="logo__img logo__img--pink" src="img/logo-pink.png">
+                            </a>
+                        </div>
+                        <a class="phone-link" href="tel:+71 88 569 6822">
+                            <img class="phone-link__img" src="img/icon-phone.png" alt="phone">
+                            <span class="phone-link__num">+71 88 569 6822</span>
+                        </a>
+                    </div>
+                    <nav class="navbar__row navbar__row--right">
+                        <div class="burger-menu">
+                            <div class="burger-menu__btn burger-menu__btn--active">
+                                <img class="burger-menu__icon" src="img/icon_menu.png" alt="menu">
+                                <img class="burger-menu__icon" src="img/icon_menu_pink.png">
+                            </div>
+                            <div class="burger-menu__btn">
+                                <img class="burger-menu__icon" src="img/icon_close_menu.png" alt="close">
+                                <img class="burger-menu__icon" src="img/icon_menu_pink.png">
+                            </div>
+                            <ul class="submenu">
+                                <li class="submenu__item">
+                                    <a class="submenu__link" href="#">about</a>
+                                </li>
+                                <li class="submenu__item">
+                                    <a class="submenu__link" href="#">blog</a>
+                                </li> 
+                                <li class="submenu__item">
+                                    <a class="submenu__link" href="#">projects</a>
+                                </li>
+                                <li class="submenu__item">
+                                    <a class="submenu__link" href="#">contact</a>
+                                </li>   
+                            </ul>
+                        </div>
+                        <ul class="menu">
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">about</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">blog</a>
+                            </li> 
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">projects</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">contact</a>
+                            </li>   
+                        </ul>
+                    </nav>                           
+                </div>
+                <ul class="socials socials--vertical">
+                    <li class="socials__item">
+                        <a class="icon-link" href="#" target="_blank">
+                            <img class="icon-link__img icon-link__img--inst" src="img/icon_instagram.png" alt="instagram">
+                            <img class="icon-link__img icon-link__img--inst" src="img/icon_instagram_gradient.png">
+                        </a>
+                        <div class="circle">
+                            <div class="circle__inner"></div>
+                        </div>
+                    </li>
+                    <li class="socials__item">
+                        <a class="icon-link" href="#" target="_blank">
+                            <img class="icon-link__img icon-link__img--fb" src="img/icon_facebook.png" alt="facebook">
+                            <img class="icon-link__img icon-link__img--fb" src="img/icon_facebook_gradient.png">
+                        </a>
+                        <div class="circle">
+                            <div class="circle__inner"></div>
+                        </div>
+                    </li>
+                    <li class="socials__item">
+                        <a class="icon-link" href="#" target="_blank">
+                            <img class="icon-link__img icon-link__img--twtt" src="img/icon-twitter.png" alt="twitter">
+                            <img class="icon-link__img icon-link__img--twtt" src="img/icon_twitter_gradient.png">
+                        </a>
+                        <div class="circle">
+                            <div class="circle__inner"></div>
+                        </div>
+                    </li>
+                    <li class="socials__item">
+                        <a class="icon-link" href="#" target="_blank">
+                            <img class="icon-link__img icon-link__img--bhn" src="img/icon_behance.png" alt="behance">
+                            <img class="icon-link__img icon-link__img--bhn" src="img/icon_behance_gradient.png">
+                        </a>
+                        <div class="circle">
+                            <div class="circle__inner"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="page-main">
+        <div class="wrapper">
+            <div class="about">
+                <div class="about__section">
+                    <div class="main-slider">
+                        <h1 class="main-slider__title"></h1>
+                        <p class="main-slider__descript"></p>
+                        <div class="main-slider__dots">
+                            <div class="dots">
+                                <span class="dots__item" onclick="currentSlide(1)"></span>
+                                <span class="dots__item" onclick="currentSlide(2)"></span>
+                                <span class="dots__item" onclick="currentSlide(3)"></span>
+                                <span class="dots__item" onclick="currentSlide(4)"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__section">
+                    <div class="about-video">
+                        <div class="video-block"></div>
+                        <p class="about-video__descript"></p>
+                        <div class="signature"></div>
+                    </div>
+                </div>
+                <div class="links">
+                    <div class="links-item links-item--left"></div>
+                    <div class="links-item links-item--right"></div>
+                </div>
+            </div>
+            <div class="blog">
+                <div class="blog__item blog__item--top"></div>    
+                <div class="blog__item blog__item--bottom"></div>                                                                                                                                                                                        
+            </div>
+            <div class="projects">
+                <h2 class="projects__title">SELECTED PROJECTS</h2>
+                <div class="projects__container">
+                    <div class="projects__item"></div>
+                    <div class="projects__item"></div>
+                    <div class="projects__item"></div>
+                    <div class="projects__item"></div>
+                    <div class="projects__item"></div>
+                    <div class="projects__item"></div>
+                </div>
+            </div>
+            <div class="contact">
+                <h2 class="contact__title"></h2>
+                <p class="contact__descript"></p>
+                <nav class="contact__nav">
+                    <ul class="nav-list">
+                        <li class="nav-list__item"><a href="#">DIGITAL</a></li>
+                        <li class="nav-list__item"><span>/</span></li>
+                        <li class="nav-list__item"><a href="#">DESIGN</a></li>
+                        <li class="nav-list__item"><span>/</span></li>
+                        <li class="nav-list__item"><a href="#">MARKETING</a></li>
+                        <li class="nav-list__item"><span>/</span></li>
+                        <li class="nav-list__item"><a href="#">ECOMMERCE</a></li>
+                        <li class="nav-list__item"><span>/</span></li>
+                        <li class="nav-list__item"><a href="#">BRANDING</a></li>
+                    </ul>
+                </nav>
+                <div class="button">
+                    <button>VIEW PRICING DETAILS</button>
+                </div>
+                <div class="contact__slider">
+                    <div class="boxed-slider">
+                        <div class="boxed-slider__content">
+                            <div class="card-block">
+                                <div class="card-block__icon"></div>
+                                <h3 class="card-block__name"></h3>
+                                <p class="card-block__descript"></p>
+                            </div>
+                            <div class="card-block">
+                                <div class="card-block__icon"></div>
+                                <h3 class="card-block__name"></h3>
+                                <p class="card-block__descript"></p>
+                            </div>
+                            <div class="card-block">
+                                <div class="card-block__icon"></div>
+                                <h3 class="card-block__name"></h3>
+                                <p class="card-block__descript"></p>
+                            </div>
+                        </div>
+                        <div class="boxed-slider__dots">
+                            <div class="dots">
+                                <span class="dots__item" onclick="currentSlide(1)"></span>
+                                <span class="dots__item" onclick="currentSlide(2)"></span>
+                                <span class="dots__item" onclick="currentSlide(3)"></span>
+                                <span class="dots__item" onclick="currentSlide(4)"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="email-block">
+                    If you'd like to get in touch, 
+                    you can send ud an email directly at 
+                    <a class="email-block__link" href="mailto:hello@10x.com">hello@10x<span class="email-block__dot">.</span>com</a> 
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer">
+        <div class="wrapper">
+            <div class="logo">
+                <img class="logo__img" src="img/logo.png" alt="logo">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

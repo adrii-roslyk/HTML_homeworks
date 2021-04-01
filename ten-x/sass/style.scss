@@ -1,0 +1,24 @@
+@import './fonts';
+@import './vars';
+@import './normalize';
+
+.page {
+    background-color: $pageBgColor;
+}
+
+.bg-layer {
+    &__img {
+    position: absolute;
+    z-index: -1000;
+    top: 0;
+    width: 100%; 
+    height: 8700px;   
+    }
+}
+
+@import './header/header';
+
+
+
+
+

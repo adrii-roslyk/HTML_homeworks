@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;    
+}
+
+a, button {
+    &:hover {
+        cursor: pointer;
+    }    
+}
+
+img, a {
+    display: block;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1800px;
+}
