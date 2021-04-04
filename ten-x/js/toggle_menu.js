@@ -11,10 +11,10 @@ function toggle() {
     if (btnClose.style.display !== "block") {
         btnOpen.style.display = "none";
         btnClose.style.display = "block";
-        menuFallsOut.style.cssText = "display:block; opacity: 1; transform: translateY(0)";
+        menuFallsOut.style.cssText = "display: block; opacity: 1; transform: translateY(0)";
     } else {
         btnClose.style.display = "none";
-        btnOpen.style.display = "block";
+        btnOpen.style.display = "flex";
         menuFallsOut.style.display = "none";
     }
 }

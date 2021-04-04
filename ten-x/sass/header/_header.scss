@@ -1,33 +1,31 @@
 .header-box {
-    padding: 60px 0 166px;    
+    padding: rem(60) 0 rem(166);    
     display: flex;
     justify-content: space-between;
-
-    .navbar {
-        width: 94%;
-        max-width: 1700px;        
-    }
 }
 
 .navbar {
-    max-height: 29px;
+    width: 94%;
+    max-width: rem(1700); 
+    max-height: rem(29);
     display: flex;
     justify-content: space-between;
     
     &__row {
         flex-grow: 1;
-        
+                
         &--left {
             position: relative;
             display: flex;
             justify-content: space-between;
-            max-width: 405px;
+            max-width: rem(405);
             width: 24%; //405px
         }
 
         &--right {
-            max-width: 500px;
+            max-width: rem(500);
             width: 29%; //500px
+            
         }
     }
 }
@@ -36,7 +34,7 @@
     position: relative;
     
     &__img {
-        max-width: 119px;
+        max-width: rem(119); 
 
         &--pink {
             position: absolute;
@@ -51,20 +49,20 @@
 }
 
 .phone-link {
-    min-width: 200px;
+    min-width: rem(200); 
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     &__img {
-        width: 23px;
+        width: rem(23); 
         animation: pulse 1.5s ease-out infinite;       
     }
 
     &__num {
         font-family: "Times New Roman", serif;
-        font-size: 17px; 
-        line-height: 17px;
+        font-size: rem(17);  
+        line-height: rem(17); 
         font-weight: 400;
         letter-spacing: 3px;
         color: #6b7175;               
@@ -88,24 +86,30 @@
 }
 
 .burger-menu {
-    display: none; //!!!!!!!!!!!!!
+    display: none;
+    position: relative;
+    top: 3px;
+    /*
     &__btn {
         position: relative;
         top: 4px;
     }
+    */
 }
 
 .btn-menu {
-    position: relative;
+    //position: relative;
     
     &__icon {
-        width: 29px;
-        height: 22px;
+        width: rem(29); 
+        height: rem(22); 
+        margin: 0 auto;
                 
         &:last-child {
             position: absolute;
             top: 0;
             left: 0;
+            right: 0;
             opacity: 0;
             
             &:hover {
@@ -121,25 +125,26 @@
         z-index: 1;
         top: 0;
         left: 0;
+        right: 0;
     }
 }
 
 .submenu {
     display: none;
-    padding-top: 22px;
-    text-align: left;
+    padding-top: rem(22);
     animation: fall .4s ease-out;
-        
-    &__item {
-        padding-top: 29px;
-        max-width: min-content;       
+                
+    &__item {        
+        padding-top: rem(29);
+        max-width: min-content;
+        margin: 0 auto;
     }
 
-    &__link {        
-        font-family: "Lato", sans-serif;
-        font-size: 15px; 
-        line-height: 15px;
-        font-weight: bold;
+    &__link {
+        padding-left: 3px;
+        font-family: "Lato Bold", sans-serif;
+        font-size: rem(15); 
+        line-height: rem(15);
         text-transform: uppercase;
         letter-spacing: 3px;
         color: #53595c;
@@ -157,7 +162,6 @@
 .menu {
     height: 100%;
     display: flex;
-    //display: none; //!!!!!!!!!!!!!
     justify-content: space-between;
     align-items: center;
 
@@ -167,15 +171,14 @@
         align-items: center;
 
         &:not(:last-child) {
-            padding-right: 30px;            
+            padding-right: rem(30);           
         }
     }
     
     &__link {        
-        font-family: "Lato", sans-serif;
-        font-size: 15px; 
-        line-height: 15px;
-        font-weight: bold;
+        font-family: "Lato Bold", sans-serif;
+        font-size: rem(15); 
+        line-height: rem(15);
         text-transform: uppercase;
         letter-spacing: 3px;
         color: #53595c;
@@ -196,8 +199,8 @@
 
     &__item {
         position: relative;
-        width: 50px;
-        height: 50px;
+        width: rem(50);
+        height: rem(50);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -208,14 +211,14 @@
     }
     
     &--vertical {
-        margin: -11px -15px 0 63px;
+        margin: rem(-11) rem(-15) 0 rem(63);
         flex-direction: column;
     }
 }
 
 .circle {
-    width: 50px;
-    height: 50px;
+    width: rem(50);
+    height: rem(50);
     position: absolute;
     border-radius: 50%;
     border: 1px solid transparent;
@@ -256,19 +259,19 @@
         margin: 0 auto;
 
         &--inst {
-            width: 17px;
+            width: rem(17);
         }
 
         &--fb {
-            width: 10px;
+            width: rem(10);
         }
 
         &--twtt {
-            width: 18px;    
+            width: rem(18);    
         }
 
         &--bhn {
-            width: 20px;
+            width: rem(20);
         }
 
         &:last-child {
