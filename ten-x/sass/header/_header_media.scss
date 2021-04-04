@@ -120,9 +120,8 @@
     }
 
     .btn-menu {
-        display: flex;
-        justify-content: flex-end;
-
+        @include flex(flex-end);
+       
         &__icon {
             margin: 0;
 

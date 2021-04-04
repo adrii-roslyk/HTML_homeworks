@@ -1,7 +1,8 @@
 @import './fonts';
-@import './vars';
 @import './mixins';
+@import './vars';
 @import './normalize';
+@import './placeholders';
 
 .page {
     background-color: $pageBgColor;

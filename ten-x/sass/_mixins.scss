@@ -1,3 +1,19 @@
-@function rem($pixels, $context: $browserFntSize) {
+@function rem($pixels) {
+    $context: 16;
     @return #{$pixels / $context}rem;
 }
+
+@mixin flex($jc: flex-start, $ai: stretch) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+@mixin absolute ($tp: auto, $rt: auto, $bt: auto, $lf: auto) {
+    position: absolute;
+    top: $tp;
+    right: $rt;
+    bottom: $bt;
+    left: $lf;
+}
+

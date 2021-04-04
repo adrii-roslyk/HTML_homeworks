@@ -1,0 +1,18 @@
+%menu-link {
+    font: {
+        family: "Lato Bold", sans-serif;
+        size: rem(15);
+    } 
+    line-height: rem(15);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: $menuGrey;
+
+    &:hover {
+        color: $linkHvrColor;                       
+    }
+
+    &:active {
+        color: $linkActColor;
+    }
+}
