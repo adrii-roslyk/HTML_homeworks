@@ -180,6 +180,18 @@
 
     .btn-menu {
         @include flex(center);
+
+        &__icon {
+            margin: 0 auto;
+
+            &:last-child {
+                @include absolute(0, 0, auto, 0);
+            }
+        }
+
+        &:last-child {
+            @include absolute(0, 0, auto, 0);
+        }
     }
 
     .socials--vertical {
@@ -189,6 +201,7 @@
     }
 
     .submenu {
+        background-color: $pageBgColor;
         @include absolute (0,0,auto,0);
 
         &__item {

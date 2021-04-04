@@ -664,6 +664,23 @@ img, a {
         -ms-flex-align: stretch;
             align-items: stretch;
   }
+  .btn-menu__icon {
+    margin: 0 auto;
+  }
+  .btn-menu__icon:last-child {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    left: 0;
+  }
+  .btn-menu:last-child {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    left: 0;
+  }
   .socials--vertical {
     margin: auto;
     position: absolute;
@@ -674,6 +691,7 @@ img, a {
     z-index: 1;
   }
   .submenu {
+    background-color: #111619;
     position: absolute;
     top: 0;
     right: 0;
