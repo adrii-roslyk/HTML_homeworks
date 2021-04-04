@@ -323,6 +323,7 @@ img, a {
 }
 
 .submenu {
+  display: none;
   padding-top: 1.375rem;
   -webkit-animation: fall .4s ease-out;
           animation: fall .4s ease-out;
