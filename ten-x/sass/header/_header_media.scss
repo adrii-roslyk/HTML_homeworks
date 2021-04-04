@@ -149,5 +149,56 @@
         margin: rem(85) 0 0 rem(-16);
     }    
 }
-    
-   
+
+@media screen and (max-width: 390px) {
+    .header-box {
+        position: relative;
+    }
+
+    .navbar {
+        display: block;
+        
+        &__row--left {
+            display: block;
+            margin: 0 auto;
+            min-width: min-content;
+        }
+
+        &__row--right {
+            margin-top: rem(85);
+        }
+    }
+
+    .logo {
+        max-width: max-content;
+        margin: 0 auto rem(29);
+    }
+
+    .phone-link {
+        min-width: rem(220);             
+    }
+
+    .btn-menu {
+        @include flex(center);
+    }
+
+    .socials--vertical {
+        margin: auto;
+        @include absolute (rem(130),0,auto,0);
+        z-index: 1;
+    }
+
+    .submenu {
+        @include absolute (0,0,auto,0);
+
+        &__item {
+            margin: auto;
+        }
+        
+        &__link {
+            padding-left: rem(10);
+        }
+    }
+}
+
+

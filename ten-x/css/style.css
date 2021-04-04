@@ -323,7 +323,6 @@ img, a {
 }
 
 .submenu {
-  display: none;
   padding-top: 1.375rem;
   -webkit-animation: fall .4s ease-out;
           animation: fall .4s ease-out;
@@ -621,6 +620,70 @@ img, a {
             flex-direction: row;
     max-width: 14.1875rem;
     margin: 5.3125rem 0 0 -1rem;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .header-box {
+    position: relative;
+  }
+  .navbar {
+    display: block;
+  }
+  .navbar__row--left {
+    display: block;
+    margin: 0 auto;
+    min-width: -webkit-min-content;
+    min-width: -moz-min-content;
+    min-width: min-content;
+  }
+  .navbar__row--right {
+    margin-top: 5.3125rem;
+  }
+  .logo {
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    margin: 0 auto 1.8125rem;
+  }
+  .phone-link {
+    min-width: 13.75rem;
+  }
+  .btn-menu {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .socials--vertical {
+    margin: auto;
+    position: absolute;
+    top: 8.125rem;
+    right: 0;
+    bottom: auto;
+    left: 0;
+    z-index: 1;
+  }
+  .submenu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    left: 0;
+  }
+  .submenu__item {
+    margin: auto;
+  }
+  .submenu__link {
+    padding-left: 0.625rem;
   }
 }
 
