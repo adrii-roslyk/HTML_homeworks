@@ -8,11 +8,11 @@
 @media screen and (max-width: 1200px) {
 
     .navbar__row--left {
-        max-width: rem(380);
+        max-width: 380px;
     }
 
     .navbar__row--right {
-        max-width: rem(449);
+        max-width: 449px;
     }
 
     .socials--vertical {
@@ -22,11 +22,11 @@
 
 @media screen and (max-width: 1100px) {
     .navbar__row--left {
-        max-width: rem(370);
+        max-width: 370px;
     }
 
     .navbar__row--right {
-        max-width: rem(429);
+        max-width: 429px;
     }
 
     .socials--vertical {
@@ -145,7 +145,7 @@
 
     .socials--vertical {
         flex-direction: row;
-        max-width: rem(227);
+        max-width: 227px;
         margin: rem(85) 0 0 rem(-16);
     }    
 }
@@ -172,10 +172,6 @@
     .logo {
         max-width: max-content;
         margin: 0 auto rem(29);
-    }
-
-    .phone-link {
-        min-width: rem(220);             
     }
 
     .btn-menu {

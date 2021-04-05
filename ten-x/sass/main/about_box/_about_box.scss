@@ -1,0 +1,109 @@
+.about-box {
+    position: relative;
+}
+
+.main-slider {
+    &__item {
+        background: seagreen;
+        width: 69%;
+        max-width: 1195px;
+        margin: 0 auto;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+    
+    &__img {
+        max-width: 100%;
+    }
+    
+    &__descript {
+        margin-bottom: rem(42);
+        padding: rem(19) 0 rem(20) rem(31);
+        text-align: center;
+        font: {
+            family: "Playfair Display Regular", serif;
+            size: rem(20);
+        }
+        color: $dotColor;
+        text-transform: uppercase;
+        letter-spacing: rem(29);
+    }
+
+    @keyframes fade {
+        from {
+            transform: translateX(30%);
+            opacity: .4
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1
+        }
+    }
+
+    &:last-child {
+        margin: 0 auto;
+    }
+}
+
+.dots {
+    @include flex($jc: center);
+
+    .active {
+        @extend %active-dot;
+    }
+    
+    &__item {
+        position: relative;
+        max-width: min-content;
+        border-radius: 50%;
+
+        &:not(:last-child) {
+            margin-right: 4px;
+        }
+
+        &:hover {
+            cursor: pointer;
+            @extend %active-dot;           
+        }           
+    }
+
+    &__inner {
+        @include absolute($tp: 50%, $rt: 50%);
+        transform: translate(50%, -50%);
+        border-radius: 50%;
+        background-color: $dotColor;
+        width: 3px;
+        height: 3px;
+    }
+
+    &__outer {
+        visibility: hidden;
+        border: 1px solid $dotActColor {
+            radius: 50%;
+        }
+        width: rem(16);
+        height: rem(16);
+    }
+}
+
+.links {
+    @include absolute($tp: rem(310));
+    @include flex(space-between);
+    width: 100%;
+    //background-color: red;
+    @extend %menu-link;
+
+    &__item {
+        &--left {
+            margin-left: rem(15);
+            transform: rotate(-90deg);
+            transform-origin: left bottom;
+        }
+
+        &--right {
+            margin-right: rem(15);
+            transform: rotate(90deg);
+            transform-origin: right bottom;
+        }
+    }
+}

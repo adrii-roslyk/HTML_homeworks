@@ -1,12 +1,12 @@
 .header-box {
-    padding: rem(60) 0 rem(166);
+    padding: rem(60) 0 rem(20);
     @include flex(space-between);   
 }
 
 .navbar {
     width: 94%;
-    max-width: rem(1700); 
-    max-height: rem(29);
+    max-width: 1700px; 
+    max-height: 29px;
     @include flex(space-between);
         
     &__row {
@@ -15,14 +15,13 @@
         &--left {
             position: relative;
             @include flex(space-between);
-            max-width: rem(405);
-            width: 24%; //405px
+            max-width: 405px;
+            width: 24%; 
         }
 
         &--right {
-            max-width: rem(500);
-            width: 29%; //500px
-            
+            max-width: 500px;
+            width: 29%; 
         }
     }
 }
@@ -31,7 +30,7 @@
     position: relative;
     
     &__img {
-        max-width: rem(119); 
+        max-width: 119px; 
 
         &--pink {
             @include absolute($tp: 0);            
@@ -45,7 +44,7 @@
 }
 
 .phone-link {
-    min-width: rem(200); 
+    min-width: 200px; 
     @include flex(space-between, center);
    
     &__img {
@@ -56,9 +55,9 @@
     &__num {
         font: {
             family: "Times New Roman", serif;
-            size: rem(17);
+            size: rem(16);
         } 
-        line-height: rem(17); 
+        line-height: rem(16); 
         letter-spacing: 3px;
         color: $phoneGrey               
     }
@@ -208,20 +207,14 @@
     width: rem(50);
     height: rem(50);
     position: absolute;
-    border: 1px solid transparent {
-        radius: 50%;
-        top: 1px solid $linkHvrColor;
-    }
+    @extend %circle-border;
     animation: rotate 1s ease-in-out infinite;
     z-index: -1;
     display: none;
 
     &__inner {
         @include absolute(-1px, -1px, -1px, -1px);
-        border: 1px solid transparent {
-            radius: 50%;
-            top: 1px solid $linkHvrColor;
-        }
+        @extend %circle-border;
         animation: flex 1s ease-in-out infinite;
 
         &::before {

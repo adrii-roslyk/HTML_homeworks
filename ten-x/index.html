@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,12 @@
     <title>TEN-X</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="page">
     <div class="bg-layer">
         <img class="bg-layer__img" src="img/Layer_0.jpg">
     </div>
+<!--header//////////////////////////////////////////////////-->
     <header class="page-header">
         <div class="wrapper">
             <div class="header-box">
@@ -38,20 +41,20 @@
                                     <img class="btn-menu__icon" src="img/icon_close_menu.png" alt="close">
                                     <img class="btn-menu__icon" id="icon-close" src="img/icon_close_menu_pink.png">
                                 </div>
-                            </div>                      
+                            </div>
                             <ul class="submenu" id="falls-out">
                                 <li class="submenu__item">
                                     <a class="submenu__link" href="#">about</a>
                                 </li>
                                 <li class="submenu__item">
                                     <a class="submenu__link" href="#">blog</a>
-                                </li> 
+                                </li>
                                 <li class="submenu__item">
                                     <a class="submenu__link" href="#">projects</a>
                                 </li>
                                 <li class="submenu__item">
                                     <a class="submenu__link" href="#">contact</a>
-                                </li>   
+                                </li>
                             </ul>
                         </div>
                         <ul class="menu">
@@ -60,20 +63,21 @@
                             </li>
                             <li class="menu__item">
                                 <a class="menu__link" href="#">blog</a>
-                            </li> 
+                            </li>
                             <li class="menu__item">
                                 <a class="menu__link" href="#">projects</a>
                             </li>
                             <li class="menu__item">
                                 <a class="menu__link" href="#">contact</a>
-                            </li>   
+                            </li>
                         </ul>
-                    </nav>                           
+                    </nav>
                 </div>
                 <ul class="socials socials--vertical">
                     <li class="socials__item">
                         <a class="icon-link" href="#" target="_blank">
-                            <img class="icon-link__img icon-link__img--inst" src="img/icon_instagram.png" alt="instagram">
+                            <img class="icon-link__img icon-link__img--inst" src="img/icon_instagram.png"
+                                alt="instagram">
                             <img class="icon-link__img icon-link__img--inst" src="img/icon_instagram_gradient.png">
                         </a>
                         <div class="circle">
@@ -111,38 +115,62 @@
             </div>
         </div>
     </header>
+<!--end_header//////////////////////////////////////////////////-->
+<!--main//////////////////////////////////////////////////-->
     <main class="page-main">
         <div class="wrapper">
-            <div class="about">
-                <div class="about__section">
-                    <div class="main-slider">
-                        <h1 class="main-slider__title"></h1>
-                        <p class="main-slider__descript"></p>
-                        <div class="main-slider__dots">
-                            <div class="dots">
-                                <span class="dots__item" onclick="currentSlide(1)"></span>
-                                <span class="dots__item" onclick="currentSlide(2)"></span>
-                                <span class="dots__item" onclick="currentSlide(3)"></span>
-                                <span class="dots__item" onclick="currentSlide(4)"></span>
-                            </div>
-                        </div>
+<!--about_block---------------------------------------------------->
+            <div class="about-box">
+                <div class="main-slider">
+                    <div class="main-slider__item">
+                        <img class="main-slider__img" src="img/10_x.png" alt="10_x">
+                        <p class="main-slider__descript">your presence</p>
                     </div>
-                </div>
-                <div class="about__section">
-                    <div class="about-video">
-                        <div class="video-block"></div>
-                        <p class="about-video__descript"></p>
-                        <div class="signature"></div>
+                    <div class="main-slider__item">
+                        <img class="main-slider__img" src="img/10_x_light.png" alt="10_x">
+                        <p class="main-slider__descript">lorem ipsum</p>
+                    </div>
+                    <div class="main-slider__item">
+                        <img class="main-slider__img" src="img/10_x.png" alt="10_x">
+                        <p class="main-slider__descript">esse dolorem</p>
+                    </div>
+                    <div class="main-slider__item">
+                        <img class="main-slider__img" src="img/10_x_light.png" alt="10_x">
+                        <p class="main-slider__descript">quod itaque</p>
+                    </div>
+                    <div class="dots">
+                        <div class="dots__item" id="dot1">
+                            <div class="dots__inner"></div>
+                            <div class="dots__outer"></div>
+                        </div>
+                        <div class="dots__item" id="dot2">
+                            <div class="dots__inner"></div>
+                            <div class="dots__outer"></div>
+                        </div>
+                        <div class="dots__item" id="dot3">
+                            <div class="dots__inner"></div>
+                            <div class="dots__outer"></div>
+                        </div>
+                        <div class="dots__item" id="dot4">
+                            <div class="dots__inner"></div>
+                            <div class="dots__outer"></div>
+                        </div>                       
                     </div>
                 </div>
                 <div class="links">
-                    <div class="links-item links-item--left"></div>
-                    <div class="links-item links-item--right"></div>
+                    <a class="links__item links__item--left" href="#">what we do</a>
+                    <a class="links__item links__item--right" href="#">who we are</a>
+                </div>
+                <div class="video-section">
+                    <div class="video-section__video"></div>
+                    <p class="video-section__descript"></p>
+                    <div class="signature"></div>
                 </div>
             </div>
+<!--end_about_block---------------------------------------------------->
             <div class="blog">
-                <div class="blog__item blog__item--top"></div>    
-                <div class="blog__item blog__item--bottom"></div>                                                                                                                                                                                        
+                <div class="blog__item blog__item--top"></div>
+                <div class="blog__item blog__item--bottom"></div>
             </div>
             <div class="projects">
                 <h2 class="projects__title">SELECTED PROJECTS</h2>
@@ -155,6 +183,7 @@
                     <div class="projects__item"></div>
                 </div>
             </div>
+            <!--contact_block---------------------------------------------------->
             <div class="contact">
                 <h2 class="contact__title"></h2>
                 <p class="contact__descript"></p>
@@ -204,13 +233,17 @@
                     </div>
                 </div>
                 <p class="email-block">
-                    If you'd like to get in touch, 
-                    you can send ud an email directly at 
-                    <a class="email-block__link" href="mailto:hello@10x.com">hello@10x<span class="email-block__dot">.</span>com</a> 
+                    If you'd like to get in touch,
+                    you can send ud an email directly at
+                    <a class="email-block__link" href="mailto:hello@10x.com">hello@10x<span
+                            class="email-block__dot">.</span>com</a>
                 </p>
             </div>
+<!--end_contact_block---------------------------------------------------->
         </div>
     </main>
+<!--end_main//////////////////////////////////////////////////-->
+<!--footer//////////////////////////////////////////////////-->
     <footer class="page-footer">
         <div class="wrapper">
             <div class="logo">
@@ -218,6 +251,9 @@
             </div>
         </div>
     </footer>
+<!--end_footer//////////////////////////////////////////////////-->
     <script src="js/toggle_menu.js"></script>
+    <script src="js/slider.js"></script>
 </body>
+
 </html>

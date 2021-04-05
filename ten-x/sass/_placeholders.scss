@@ -1,9 +1,9 @@
 %menu-link {
     font: {
         family: "Lato Bold", sans-serif;
-        size: rem(15);
+        size: rem(14);
     } 
-    line-height: rem(15);
+    line-height: rem(14);
     text-transform: uppercase;
     letter-spacing: 3px;
     color: $menuGrey;
@@ -14,5 +14,22 @@
 
     &:active {
         color: $linkActColor;
+    }
+}
+
+%circle-border {
+    border: 1px solid transparent {
+        radius: 50%;
+        top: 1px solid $linkHvrColor;
+    }
+}
+
+%active-dot {
+    & > .dots__inner {
+        background-color: $dotActColor;
+    }
+
+    & > .dots__outer {
+        visibility: visible;                
     }
 }
