@@ -4,7 +4,7 @@
 }
 
 .navbar {
-    width: 94%;
+    width: 95%;
     max-width: 1700px; 
     max-height: 29px;
     @include flex(space-between);
@@ -55,9 +55,9 @@
     &__num {
         font: {
             family: "Times New Roman", serif;
-            size: rem(16);
+            size: 16px;
         } 
-        line-height: rem(16); 
+        line-height: 16px; 
         letter-spacing: 3px;
         color: $phoneGrey               
     }
@@ -133,7 +133,7 @@
     animation: fall .4s ease-out;
                 
     &__item {        
-        padding-top: rem(29);
+        padding-top: rem(28);
         max-width: min-content;
         margin: 0 auto;
     }
@@ -152,15 +152,16 @@
         width: rem(50);
         height: rem(50);
         @include flex(center, center);
-        
+
         &:not(:last-child) {
             margin-bottom: 9px;
         }
     }
     
     &--vertical {
-        margin: rem(-11) rem(-15) 0 rem(63);
+        margin: rem(-11) rem(-15) 0 0;
         flex-direction: column;
+        align-items: flex-end;
     }
 }
 
@@ -228,7 +229,6 @@
     }    
 }
 
-@import './header_media';
 
 
 

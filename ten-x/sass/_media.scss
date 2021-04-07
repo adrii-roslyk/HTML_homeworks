@@ -1,0 +1,40 @@
+@media screen and (max-width: 1920px) {
+    .wrapper {
+        margin: 0 rem(60);
+    }   
+}
+
+@media screen and (max-width: 1366px) {
+    html {
+        font-size: 92%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .wrapper {
+        margin: 0 rem(40);
+    }
+}
+
+@media screen and (max-width: 960px) {
+    html {
+        font-size: 90%;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    html {
+        font-size: 85%;
+    }
+
+    .wrapper {
+        margin: 0 rem(30);
+    }
+}
+
+@media screen and (max-width: 620px) {
+    html {
+        font-size: 82%;
+    }
+}
+
