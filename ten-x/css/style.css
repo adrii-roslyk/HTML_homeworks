@@ -84,7 +84,7 @@ a:hover, button:hover {
   cursor: pointer;
 }
 
-img, a {
+img, a, button {
   display: block;
 }
 
@@ -110,7 +110,7 @@ img, a {
   color: #5e00ca;
 }
 
-.circle, .circle__inner {
+.circle, .circle__inner, .round-btn__outer, .round-btn__inner {
   border: 1px solid transparent;
   -webkit-border-radius: 50%;
           border-radius: 50%;
@@ -486,6 +486,10 @@ img, a {
   overflow-x: hidden;
 }
 
+.main-slider {
+  overflow-y: hidden;
+}
+
 .main-slider__item {
   width: 66%;
   max-width: 1195px;
@@ -587,6 +591,97 @@ img, a {
 
 .main-slider:last-child {
   margin: 0 auto;
+}
+
+.round-btn {
+  position: absolute;
+  top: 29%;
+  right: 12.6%;
+  bottom: auto;
+  left: auto;
+  width: 106px;
+  height: 106px;
+}
+
+.round-btn__outer {
+  -webkit-animation: big-rotate 1s ease-in-out infinite;
+          animation: big-rotate 1s ease-in-out infinite;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: rotate(-50deg);
+      -ms-transform: rotate(-50deg);
+          transform: rotate(-50deg);
+}
+
+.round-btn__inner {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  left: -1px;
+  -webkit-animation: flex 1s ease-in-out infinite;
+          animation: flex 1s ease-in-out infinite;
+  background: rgba(24, 29, 33, 0.4);
+}
+
+.round-btn__inner::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 4px;
+  right: -5px;
+  bottom: auto;
+  left: auto;
+  border: 8px solid rgba(165, 54, 137, 0.329);
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background: #a53689 padding-box;
+}
+
+.round-btn__img {
+  width: 30%;
+  max-width: 31px;
+  opacity: 0.329;
+  position: absolute;
+  top: 43.4%;
+  right: 35.4%;
+  bottom: auto;
+  left: auto;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.round-btn__img:not(:first-child) {
+  display: none;
+}
+
+.round-btn:hover {
+  cursor: pointer;
+}
+
+.round-btn:hover .round-btn__arrow > img:first-child {
+  display: none;
+}
+
+.round-btn:hover .round-btn__arrow > img:nth-child(2) {
+  display: block;
+  opacity: 1;
+}
+
+.round-btn:active .round-btn__arrow > img:not(:last-child) {
+  display: none;
+}
+
+.round-btn:active .round-btn__arrow > img:last-child {
+  display: block;
+  opacity: 1;
 }
 
 .dots {
@@ -889,6 +984,28 @@ img, a {
   }
 }
 
+@-webkit-keyframes big-rotate {
+  0% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  100% {
+    -webkit-transform: rotate(310deg);
+            transform: rotate(310deg);
+  }
+}
+
+@keyframes big-rotate {
+  0% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  100% {
+    -webkit-transform: rotate(310deg);
+            transform: rotate(310deg);
+  }
+}
+
 @media screen and (max-width: 1920px) {
   .wrapper {
     margin: 0 3.75rem;
@@ -964,17 +1081,6 @@ img, a {
   }
   .navbar__row--left {
     max-width: 350px;
-  }
-  .navbar__row--right {
-    max-width: 350px;
-  }
-}
-
-@media screen and (max-width: 960px) {
-  .navbar__row--left {
-    -webkit-flex-basis: 10rem;
-        -ms-flex-preferred-size: 10rem;
-            flex-basis: 10rem;
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
@@ -983,8 +1089,18 @@ img, a {
             align-content: space-between;
     height: 5.4375rem;
   }
+  .navbar__row--right {
+    max-width: 350px;
+  }
   .logo {
     margin-right: 3.125rem;
+  }
+  .circle__inner::before {
+    position: absolute;
+    top: 3px;
+    right: 2px;
+    bottom: auto;
+    left: auto;
   }
 }
 
@@ -1010,6 +1126,13 @@ img, a {
 @media screen and (max-width: 760px) {
   .header-box {
     padding-top: 1.875rem;
+  }
+  .circle__inner::before {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    bottom: auto;
+    left: auto;
   }
 }
 
@@ -1141,6 +1264,37 @@ img, a {
   }
 }
 
+@media screen and (max-width: 1920px) {
+  .round-btn {
+    width: 6.25rem;
+    height: 6.25rem;
+  }
+  .round-btn__inner::before {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 6px;
+    right: -4px;
+    bottom: auto;
+    left: auto;
+    border-width: 7px;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .round-btn {
+    width: 5.9375rem;
+    height: 5.9375rem;
+  }
+  .round-btn__inner::before {
+    position: absolute;
+    top: 2px;
+    right: -2px;
+    bottom: auto;
+    left: auto;
+  }
+}
+
 @media screen and (max-width: 1600px) {
   .main-slider__descript {
     margin-bottom: 3.4375rem;
@@ -1162,6 +1316,23 @@ img, a {
   }
 }
 
+@media screen and (max-width: 1500px) {
+  .round-btn {
+    width: 5.625rem;
+    height: 5.625rem;
+  }
+  .round-btn__inner::before {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 4px;
+    right: -2px;
+    bottom: auto;
+    left: auto;
+    border-width: 6px;
+  }
+}
+
 @media screen and (max-width: 1420px) {
   .main-slider__descript {
     margin-bottom: 3.125rem;
@@ -1178,6 +1349,13 @@ img, a {
     font-size: 1.3125rem;
     letter-spacing: 1.9375rem;
   }
+  .round-btn__inner::before {
+    position: absolute;
+    top: 3px;
+    right: -2px;
+    bottom: auto;
+    left: auto;
+  }
   .dots__item:not(:last-child) {
     margin-right: 4px;
   }
@@ -1188,6 +1366,69 @@ img, a {
   .dots__outer {
     width: 1.125rem;
     height: 1.125rem;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .round-btn {
+    width: 5rem;
+    height: 5rem;
+  }
+  .round-btn__inner::before {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 1px;
+    right: 0px;
+    bottom: auto;
+    left: auto;
+    border-width: 5px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .round-btn {
+    width: 4.375rem;
+    height: 4.375rem;
+  }
+  .round-btn__inner::before {
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 2px;
+    right: 0px;
+    bottom: auto;
+    left: auto;
+    border-width: 4px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .round-btn {
+    width: 3.75rem;
+    height: 3.75rem;
+  }
+  .round-btn__inner::before {
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 1px;
+    right: -2px;
+    bottom: auto;
+    left: auto;
+    border-width: 4px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .round-btn {
+    width: 3.125rem;
+    height: 3.125rem;
+  }
+  .round-btn__inner::before {
+    width: 6px;
+    height: 6px;
+    border-width: 3px;
   }
 }
 /*# sourceMappingURL=style.css.map */

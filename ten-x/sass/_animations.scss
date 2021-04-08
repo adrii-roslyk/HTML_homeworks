@@ -77,3 +77,12 @@
         opacity: 1;
     }
 }
+
+@keyframes big-rotate {
+    0% {
+      transform: rotate(-45deg);
+    }
+    100% {
+      transform: rotate(310deg);
+    }
+}

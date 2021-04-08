@@ -221,8 +221,8 @@
         &::before {
             content:'';
             width: 8px;
-            height: 8px;
-            @include absolute(3px, 3px, auto, auto);           
+            height: 8px;              
+            @include absolute($tp: 3px, $rt: 3px);
             border-radius: 50%;
             background-color: $linkHvrColor;
         }

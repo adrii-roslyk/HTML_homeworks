@@ -4,8 +4,10 @@
 }
 
 .main-slider {
+    //position: relative;
+    overflow-y: hidden;
+
     &__item {
-        //background: seagreen;
         width: 66%;
         max-width: 1195px;
         margin: 0 auto;
@@ -65,6 +67,76 @@
 
     &:last-child {
         margin: 0 auto;
+    }
+}
+
+
+.round-btn {
+    @include absolute($tp: 29%, $rt: 12.6%);
+    width: 106px;
+    height: 106px;
+    
+    &__outer {
+        @extend %circle-border;
+        animation: big-rotate 1s ease-in-out infinite;
+        @include absolute(0, 0, 0, 0);
+        transform: rotate(-50deg);
+    }
+
+    &__inner {
+        @include absolute(-1px, -1px, -1px, -1px);
+        @extend %circle-border;
+        animation: flex 1s ease-in-out infinite;
+        background: rgba(24, 29, 33, 0.4);
+        
+        &::before {
+            content:'';
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            @include absolute($tp: 4px, $rt: -5px);
+            border: 8px solid rgba(165, 54, 137, 0.329) {
+                radius: 50%;
+            };
+            background: $linkHvrColor padding-box;
+        }
+        
+    }
+
+    &__img {
+        width: 30%;
+        max-width: 31px;
+        opacity: 0.329;
+        @include absolute($tp: 43.4%, $rt: 35.4%);
+        user-select: none;
+        
+        &:not(:first-child) {
+            display: none;
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+
+        .round-btn__arrow > img:first-child {
+            display: none;
+        }
+
+        .round-btn__arrow > img:nth-child(2) {
+            display: block;
+            opacity: 1;
+        }
+    }
+
+    &:active {
+        .round-btn__arrow > img:not(:last-child) {
+            display: none;
+        }
+
+        .round-btn__arrow > img:last-child {
+            display: block;
+            opacity: 1;
+        }
     }
 }
 

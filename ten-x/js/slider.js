@@ -5,12 +5,14 @@ let dot1 = document.getElementById("dot1");
 let dot2 = document.getElementById("dot2");
 let dot3 = document.getElementById("dot3");
 let dot4 = document.getElementById("dot4");
+let btn1 = document.getElementById("btn1");
 
 showSlides();
 dot1.addEventListener("click", function() {currentSlide(1)});
 dot2.addEventListener("click", function() {currentSlide(2)});
 dot3.addEventListener("click", function() {currentSlide(3)});
 dot4.addEventListener("click", function() {currentSlide(4)});
+btn1.addEventListener("click", function() {forward()});
 
 function currentSlide(index) {
     clearTimeout(timeoutID);
@@ -23,7 +25,12 @@ function currentSlide(index) {
         slideIndex = index;
         showSlides(direction);
     }
-    
+}
+
+function forward() {
+    clearTimeout(timeoutID);
+    slideIndex++;
+    showSlides();
 }
 
 function showSlides(direction) {

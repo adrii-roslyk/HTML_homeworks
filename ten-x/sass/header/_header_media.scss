@@ -45,24 +45,22 @@
 
     .navbar__row--left {
         max-width: 350px;
-    }
-
-    .navbar__row--right {
-        max-width: 350px;
-    }
-}
-
-@media screen and (max-width: 960px) {
-    .navbar__row--left {
-        flex-basis: rem(160);
         flex-wrap: wrap;
         align-content: space-between;
         height: rem(87);
     }
 
+    .navbar__row--right {
+        max-width: 350px;
+    }
+
     .logo {
         margin-right: rem(50);
-    }    
+    }  
+
+    .circle__inner::before {
+        @include absolute($tp: 3px, $rt: 2px);
+    }
 }
 
 @media screen and (max-width: 780px) {
@@ -88,6 +86,10 @@
 @media screen and (max-width: 760px) {
     .header-box {
         padding-top: rem(30);
+    }
+
+    .circle__inner::before {
+        @include absolute($tp: 2px, $rt: 2px);
     }
 }
 
