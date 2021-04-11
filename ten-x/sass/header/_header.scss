@@ -53,12 +53,7 @@
     }
 
     &__num {
-        font: {
-            family: "Times New Roman", serif;
-            size: 16px;
-        } 
-        line-height: 16px; 
-        letter-spacing: 3px;
+        @include timesNewRomanReg($fs: 16px, $lh:1, $ls: 3px); 
         color: $phoneGrey               
     }
 
@@ -133,7 +128,7 @@
     animation: fall .4s ease-out;
                 
     &__item {        
-        padding-top: rem(28);
+        padding-top: rem(27);
         max-width: min-content;
         margin: 0 auto;
     }

@@ -48,22 +48,22 @@
 
 @keyframes rotate {
     0% {
-      transform: rotate(-45deg);
+        transform: rotate(-45deg);
     }
     100% {
-      transform: rotate(315deg);
+        transform: rotate(315deg);
     }
 }
 
 @keyframes flex {
     0% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
     50% {
-      transform: rotate(90deg);
+        transform: rotate(100deg);
     }
     100% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
 } 
 
@@ -78,11 +78,58 @@
     }
 }
 
-@keyframes big-rotate {
-    0% {
-      transform: rotate(-45deg);
+@keyframes arrive {
+    from {
+        transform: translateX(rem(150));
+        opacity: .4;
     }
-    100% {
-      transform: rotate(310deg);
+    to {
+        transform: translateX(0);
+        opacity: 1;
     }
 }
+
+@keyframes leave {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(rem(-150));
+        opacity: 0;
+    }
+}
+
+@keyframes arrive-inv {
+    from {
+        transform: translateX(rem(-150));
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes big-rotate {
+    0% {
+        transform: rotate(-45deg);
+    }
+    100% {
+        transform: rotate(310deg);
+    }
+}
+
+@keyframes ripple {
+    from {
+        width: 51.4%;
+        height: 51.4%;
+        background-color: rgba(172, 55, 142, 0.188);        
+    }
+    to {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(172, 55, 142, 0.02);
+    }    
+}
+

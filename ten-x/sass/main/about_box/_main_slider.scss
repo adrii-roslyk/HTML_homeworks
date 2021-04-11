@@ -1,0 +1,185 @@
+.main-slider {
+    position: relative;
+    overflow: hidden;
+
+    &__item {
+        width: 66%;
+        max-width: 1195px;
+        margin: 0 auto;
+        animation: arrive .5s, leave .5s 3.5s;       
+    }
+    
+    &__img {
+        max-width: 100%;
+    }
+    
+    &__descript {
+        margin-bottom: rem(60);
+        padding: rem(35) 0 rem(35) rem(50);        
+        @include playfairDisplayReg($fs: rem(28), $ls: rem(45));
+        text-align: center;
+        color: $dotColor;
+        text-transform: uppercase;
+        user-select: none;        
+    }
+
+    &:last-child {
+        margin: 0 auto;
+    }
+}
+
+.round-btn {
+    @include absolute($tp: -750%, $rt: 12.6%);
+    width: rem(106);
+    height: rem(106);
+       
+    &__outer {
+        @include absolute(0px, 0px, 0px, 0px);
+        @extend %circle-border;
+        animation: big-rotate 1s ease-in-out infinite;
+    }
+
+    &__inner {
+        @include absolute(-1px, -1px, -1px, -1px);
+        @extend %circle-border;
+        animation: flex 1s ease-in-out infinite;
+        background: rgba(24, 29, 33, 0.4);
+        
+        &::before {
+            content:'';
+            width: 8px;
+            height: 8px;
+            @include absolute($tp: 8px, $rt: 5px);
+            border: 4px solid rgba(165, 54, 137, 0.329);
+            border-radius: 50%;
+            background: $linkHvrColor padding-box;
+        }        
+    }
+
+    &__img {
+        width: 30%;
+        max-width: 31px;
+        opacity: 0.329;
+        @include absolute($tp: 43.4%, $rt: 35.4%);
+        user-select: none;
+        
+        &:not(:first-child) {
+            display: none;
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+
+        .round-btn__arrow > img:first-child {
+            display: none;
+        }
+
+        .round-btn__arrow > img:nth-child(2) {
+            display: block;
+            opacity: 1;
+        }
+    }
+
+    &:active {
+        .round-btn__arrow > img:not(:last-child) {
+            display: none;
+        }
+
+        .round-btn__arrow > img:last-child {
+            display: block;
+            opacity: 1;
+        }
+    }
+}
+
+.dots {
+    @include flex($jc: center);
+
+    .active {
+        @extend %active-dot;
+    }
+    
+    &__item {
+        position: relative;
+        max-width: min-content;
+        border-radius: 50%;
+
+        &:not(:last-child) {
+            margin-right: 5px;
+        }
+
+        &:hover {
+            cursor: pointer;
+            @extend %active-dot;           
+        }           
+    }
+
+    &__inner {
+        @include center;        
+        border-radius: 50%;
+        background-color: $dotColor;
+        width: 5px;
+        height: 5px;
+    }
+
+    &__outer {
+        visibility: hidden;
+        border: 2px solid $actionOrange {
+            radius: 50%;
+        }
+        width: rem(25);
+        height: rem(25);
+    }
+}
+
+.links {
+    @include absolute($tp: 44.5%);
+    @include flex(space-between);
+    width: 100%;
+        
+    &__item {
+        @extend %menu-link;
+        
+        &--left {
+            transform: rotate(-90deg);
+            transform-origin: left top;
+        }
+
+        &--right {
+            transform: rotate(90deg) translateX(3px);
+            transform-origin: right top;
+        }
+    }
+
+    &__line {
+        height: 1px;
+
+        &--long {
+            @include absolute($tp: -400%, $lf: rem(40));
+            width: 19%;
+            max-width: 342px;
+            height: 1px;
+            background-image: linear-gradient(90deg, $linkActColor 0%, #d5536f 100%);
+
+            
+            &::after {
+                content:'';
+                width: 13px;
+                height: 13px;
+                @include absolute($tp: -12px, $rt: -12px);
+                border: 6px solid rgba(165, 54, 137, 0.329) {
+                    radius: 50%;
+                };
+                background: $linkHvrColor padding-box;
+            }
+        }
+
+        &--short {
+            @include absolute($tp: -400%, $rt: rem(40));
+            width: rem(40);
+            height: 1px;
+            background-color: #a853ec;
+        }
+    }
+}

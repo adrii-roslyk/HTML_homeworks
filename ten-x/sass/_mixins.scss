@@ -3,17 +3,52 @@
     @return #{$pixels / $context}rem;
 }
 
-@mixin flex($jc: flex-start, $ai: stretch) {
-    display: flex;
+@mixin flex($jc: flex-start, $ai: stretch, $fd: row) {
+    display: flex;    
     justify-content: $jc;
     align-items: $ai;
+    flex-direction: $fd;
 }
 
-@mixin absolute ($tp: auto, $rt: auto, $bt: auto, $lf: auto) {
+@mixin absolute($tp: auto, $rt: auto, $bt: auto, $lf: auto) {
     position: absolute;
     top: $tp;
     right: $rt;
     bottom: $bt;
     left: $lf;
+}
+
+@mixin center {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+@mixin latoBold ($fs: medium, $lh: normal, $ls: normal) {
+    font: {
+        family: "Lato Bold", sans-serif;
+        size: $fs;
+    }        
+    line-height: $lh;
+    letter-spacing: $ls;
+}
+
+@mixin timesNewRomanReg ($fs: medium, $lh: normal, $ls: normal) {
+    font: {
+        family: "Times New Roman", serif;
+        size: $fs;
+    }        
+    line-height: $lh;
+    letter-spacing: $ls;
+}
+
+@mixin playfairDisplayReg ($fs: medium, $lh: normal, $ls: normal) {
+    font: {
+        family: "Playfair Display Regular", serif;
+        size: $fs;
+    }        
+    line-height: $lh;
+    letter-spacing: $ls;
 }
 

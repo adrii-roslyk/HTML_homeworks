@@ -1,12 +1,8 @@
 %menu-link {
-    font: {
-        family: "Lato Bold", sans-serif;
-        size: rem(14);
-    } 
-    line-height: rem(14);
+    @include latoBold($fs: 15px, $lh: 0.9, $ls: 3px);
     text-transform: uppercase;
-    letter-spacing: 3px;
     color: $menuGrey;
+    user-select: none;
 
     &:hover {
         color: $linkHvrColor;                       
@@ -26,10 +22,17 @@
 
 %active-dot {
     & > .dots__inner {
-        background-color: $dotActColor;
+        background-color: $actionOrange;
     }
 
     & > .dots__outer {
         visibility: visible;                
     }
+}
+
+%circle-border-wide {
+    border: 2px solid transparent {
+        radius: 50%;
+        top: 2px solid $actionOrange;
+    }    
 }

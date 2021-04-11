@@ -1,25 +1,58 @@
 @media screen and (max-width: 1920px) {
     .round-btn {
+        top: -740%;
         width: rem(100);
         height: rem(100);
     }
 
     .round-btn__inner::before {
-        width: 14px;
-        height: 14px;
-        @include absolute($tp: 6px, $rt: -4px);
-        border-width: 7px;
+        @include absolute($tp: 8px, $rt: 3px);       
+    }
+
+    .links {
+        &__line {
+            &--long {
+                width: 18.8%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1800px) {
+    .round-btn {
+        top: -730%;
+    }
+
+    .links {
+        &__line {
+            &--long {
+                width: 18.7%;
+            }
+        }
     }
 }
 
 @media screen and (max-width: 1700px) {
     .round-btn {
+        top: -710%;
         width: rem(95);
         height: rem(95);
     }
 
     .round-btn__inner::before {
-        @include absolute($tp: 2px, $rt: -2px);
+        @include absolute($tp: 8px, $rt: 2px);
+    }
+}
+
+@media screen and (max-width: 1650px) {
+    .links {
+        @include absolute($tp: 45.5%);
+
+        &__line {
+            &--long {
+                width: 18.4%;
+            }            
+        }
     }
 }
 
@@ -39,27 +72,48 @@
         }
     
         &__outer {
-            border: 1px solid $dotActColor {
+            border: 1px solid $actionOrange {
                 radius: 50%;
             }
             width: rem(20);
             height: rem(20);
         }
     }
+
+    .links {
+        @include absolute($tp: 47%);
+
+        &__line {
+            &--long {
+                &:after {
+                    width: 11px;
+                    height: 11px;
+                    @include absolute($tp: -10px, $rt: -10px);
+                    border-width: 5px;
+                }
+            }
+        }        
+    }
 }
 
 @media screen and (max-width: 1500px) {
     .round-btn {
+        top: -700%;
         width: rem(90);
         height: rem(90);
     }
 
     .round-btn__inner::before {
-        width: 12px;
-        height: 12px;
-        @include absolute($tp: 4px, $rt: -2px);
-        border-width: 6px;
+        @include absolute($tp: 7px, $rt: 2px);
     }
+
+    .links {
+        &__line {
+            &--long {
+                width: 18.2%;
+            }            
+        }
+    } 
 }
 
 @media screen and (max-width: 1420px) {
@@ -67,6 +121,10 @@
         margin-bottom: rem(50);
         font-size: rem(22);
         letter-spacing: rem(33);
+    }
+
+    .links {
+        @include absolute($tp: 48%);        
     }
 }
 
@@ -79,8 +137,12 @@
         letter-spacing: rem(31);
     }
 
+    .round-btn {
+        top: -720%;
+    }
+
     .round-btn__inner::before {
-        @include absolute($tp: 3px, $rt: -2px);
+        @include absolute($tp: 5px, $rt: 2px);
     }
 
     .dots {
@@ -100,47 +162,58 @@
             height: rem(18);
         }
     }
+
+    .links {
+        @include absolute($tp: 50%);
+        
+        &__line {
+            &--long {
+                width: 18%;
+
+                &:after {
+                    width: 10px;
+                    height: 10px;
+                    @include absolute($tp: -9px, $rt: -9px);
+                    border-width: 4px;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 1280px) {
     .round-btn {
+        top: -680%;
         width: rem(80);
         height: rem(80);
     }
 
     .round-btn__inner::before {
-        width: 10px;
-        height: 10px;
-        @include absolute($tp: 1px, $rt: 0px);
-        border-width: 5px;
+        @include absolute($tp: 3px, $rt: 1px);
     }
 }
 
 @media screen and (max-width: 1150px) {
     .round-btn {
+        top: -640%;
         width: rem(70);
         height: rem(70);
     }
 
     .round-btn__inner::before {
-        width: 8px;
-        height: 8px;
-        @include absolute($tp: 2px, $rt: 0px);
-        border-width: 4px;
+        @include absolute($tp: 2px, $rt: -1px);
     }
 }
 
 @media screen and (max-width: 960px) {
     .round-btn {
+        //top: -610%;
         width: rem(60);
         height: rem(60);        
     }
 
     .round-btn__inner::before {
-        width: 8px;
-        height: 8px;
-        @include absolute($tp: 1px, $rt: -2px);
-        border-width: 4px;
+        @include absolute($tp: 1px, $rt: -3px);
     }
 }
 
@@ -151,9 +224,7 @@
     }
 
     .round-btn__inner::before {
-        width: 6px;
-        height: 6px;
-        border-width: 3px;
+        @include absolute($tp: -2px, $rt: -3px);
     }
 }
 
