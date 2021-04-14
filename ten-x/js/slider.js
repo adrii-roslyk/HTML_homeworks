@@ -29,7 +29,6 @@ function currentSlide(index) {
 
 function forward() {
     clearTimeout(timeoutID);
-    slideIndex++;
     showSlides();
 }
 

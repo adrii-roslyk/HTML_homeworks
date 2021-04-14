@@ -1,66 +1,41 @@
-@media screen and (max-width: 1920px) {
-    .round-btn {
-        top: -740%;
-        width: rem(100);
-        height: rem(100);
-    }
-
-    .round-btn__inner::before {
-        @include absolute($tp: 8px, $rt: 3px);       
-    }
-
-    .links {
-        &__line {
-            &--long {
-                width: 18.8%;
-            }
-        }
+@media screen and (max-width: 1900px) {
+    .links__line--long {
+        width: 18.1%;        
     }
 }
 
-@media screen and (max-width: 1800px) {
-    .round-btn {
-        top: -730%;
+@media screen and (max-width: 1860px) {
+    .links__line--long {
+        width: 17.3%;        
     }
+}
 
-    .links {
-        &__line {
-            &--long {
-                width: 18.7%;
-            }
-        }
+@media screen and (max-width: 1820px) {
+    .links__line--long {
+        width: 17.1%;        
     }
 }
 
 @media screen and (max-width: 1700px) {
+    .links__line--long {
+        width: 16.9%;        
+    }
+
     .round-btn {
-        top: -710%;
+        top: -800%;
         width: rem(95);
         height: rem(95);
-    }
 
-    .round-btn__inner::before {
-        @include absolute($tp: 8px, $rt: 2px);
-    }
-}
-
-@media screen and (max-width: 1650px) {
-    .links {
-        @include absolute($tp: 45.5%);
-
-        &__line {
-            &--long {
-                width: 18.4%;
-            }            
+        &__inner::before {
+            @include absolute($tp: 8px, $rt: 2px);
         }
-    }
+    }    
 }
 
 @media screen and (max-width: 1600px) {
     .main-slider__descript {
         margin-bottom: rem(55);
-        padding: rem(28) 0 rem(28) rem(35);
-        text-align: center;
+        padding: rem(28) 0 rem(28) rem(35);        
         font-size: rem(25);
         letter-spacing: rem(40);
     }
@@ -72,84 +47,79 @@
         }
     
         &__outer {
-            border: 1px solid $actionOrange {
-                radius: 50%;
-            }
+            border-width: 1px;
             width: rem(20);
             height: rem(20);
         }
     }
 
-    .links {
-        @include absolute($tp: 47%);
+    .links {    
+        top: 46.5%;
 
-        &__line {
-            &--long {
-                &:after {
-                    width: 11px;
-                    height: 11px;
-                    @include absolute($tp: -10px, $rt: -10px);
-                    border-width: 5px;
-                }
+        &__line--long {
+            width: 16.7%;
+
+            &::after {
+                width: 11px;
+                height: 11px;
+                @include absolute($tp: -10px, $rt: -10px);
+                border-width: 5px;  
             }
-        }        
-    }
+        }
+    }    
 }
 
 @media screen and (max-width: 1500px) {
     .round-btn {
-        top: -700%;
+        top: -775%;
         width: rem(90);
         height: rem(90);
-    }
 
-    .round-btn__inner::before {
-        @include absolute($tp: 7px, $rt: 2px);
-    }
-
-    .links {
-        &__line {
-            &--long {
-                width: 18.2%;
-            }            
+        &__inner::before {
+            @include absolute($tp: 7px, $rt: 2px);
         }
+    }
+
+    .links__line--long {
+        width: 16.4%;        
     } 
 }
 
-@media screen and (max-width: 1420px) {
+@media screen and (max-width: 1440px) {
     .main-slider__descript {
         margin-bottom: rem(50);
         font-size: rem(22);
         letter-spacing: rem(33);
     }
 
-    .links {
-        @include absolute($tp: 48%);        
+    .links__item {
+        font-size: 14px;
+    }
+
+    .round-btn {
+        top: -810%;
     }
 }
 
 @media screen and (max-width: 1366px) {
     .main-slider__descript {
         margin-bottom: rem(48);
-        padding: rem(22) 0 rem(22) rem(30);
-        text-align: center;
+        padding: rem(22) 0 rem(22) rem(30);        
         font-size: rem(21);
         letter-spacing: rem(31);
     }
 
     .round-btn {
-        top: -720%;
-    }
+        top: -830%;
 
-    .round-btn__inner::before {
-        @include absolute($tp: 5px, $rt: 2px);
-    }
+        &__inner::before {
+            @include absolute($tp: 5px, $rt: 2px);
+        }
+    }    
 
     .dots {
-        &__item {
-            &:not(:last-child) {
-                margin-right: 4px;
-            }
+        &__item:not(:last-child) {
+            margin-right: 4px;            
         }
             
         &__inner {
@@ -163,70 +133,226 @@
         }
     }
 
-    .links {
-        @include absolute($tp: 50%);
+    .links {    
+        top: 48.5%;
+        
+        &__item {
+            font-size: 13px;
+        }
         
         &__line {
-            &--long {
-                width: 18%;
+           top: -460%;
 
-                &:after {
-                    width: 10px;
-                    height: 10px;
-                    @include absolute($tp: -9px, $rt: -9px);
-                    border-width: 4px;
-                }
+            &--long::after {
+                width: 10px;
+                height: 10px;
+                @include absolute($tp: -9px, $rt: -9px);
+                border-width: 4px;                
             }
         }
     }
 }
 
 @media screen and (max-width: 1280px) {
-    .round-btn {
-        top: -680%;
-        width: rem(80);
-        height: rem(80);
+    .main-slider__item {
+        width: 65%;
     }
 
-    .round-btn__inner::before {
-        @include absolute($tp: 3px, $rt: 1px);
+    .links {
+        top: 46.5%;
+        
+        &__line {
+            top: -470%;
+
+            &--long {
+                width: 18.5%;
+            }
+        }
+
+        &__item {
+            font-size: 12px;
+        }
     }
+
+    .round-btn {        
+        width: rem(80);
+        height: rem(80);
+
+        &__inner::before {
+            @include absolute($tp: 3px, $rt: 1px);
+        }
+    }    
 }
 
 @media screen and (max-width: 1150px) {
-    .round-btn {
-        top: -640%;
-        width: rem(70);
-        height: rem(70);
+    .main-slider__descript {
+        margin-bottom: rem(40);               
+        font-size: rem(19);
+        letter-spacing: rem(28);
     }
 
-    .round-btn__inner::before {
-        @include absolute($tp: 2px, $rt: -1px);
+    .links {
+        top: 47%;
+
+        &__line {
+            top: -480%;
+
+            &--long {
+                width: 18%;
+            }
+        }
+
+        &__item {
+            font-size: 11px;
+        }
     }
+    
+
+    .dots {      
+        &__inner {
+            width: 2px;
+            height: 2px;
+        }
+    
+        &__outer {
+            width: rem(14);
+            height: rem(14);
+        }
+    }
+
+    .round-btn {        
+        width: rem(70);
+        height: rem(70);
+
+        &__inner::before {
+            @include absolute($tp: 2px, $rt: -1px);
+        }
+    }    
 }
 
 @media screen and (max-width: 960px) {
-    .round-btn {
-        //top: -610%;
-        width: rem(60);
-        height: rem(60);        
+    .main-slider__descript {
+        margin-bottom: rem(35);
+        font-size: rem(15);        
     }
 
-    .round-btn__inner::before {
-        @include absolute($tp: 1px, $rt: -3px);
+    .links {
+        top: 48%;
+
+        &__line--long {
+            width: 17.9%;
+            left: rem(35);
+
+            &::after {
+                width: 9px;
+                height: 9px;
+                @include absolute($tp: -8px, $rt: -8px);
+            }
+        }
+
+        &__line--short {
+            right: rem(35);
+        } 
+    }
+
+    .round-btn {
+        top: -770%;        
+        width: rem(60);
+        height: rem(60);
+        
+        &__inner::before {
+            @include absolute($tp: 1px, $rt: -3px);
+        }
+    }
+}
+
+
+@media screen and (max-width: 827px) {
+    .main-slider__item {
+        width: 60%;
+    }
+
+    .main-slider__descript {
+        margin-bottom: rem(15);
+        font-size: rem(14);    
+        line-height: 2.5;    
+    }
+
+    .links {
+        top: 44%;
+
+        &__line--long {
+            width: 19.5%;
+        }
     }
 }
 
 @media screen and (max-width: 760px) {
-    .round-btn {
-        width: rem(50);
-        height: rem(50);        
+    .main-slider__descript {
+        margin-bottom: rem(5);           
     }
 
-    .round-btn__inner::before {
-        @include absolute($tp: -2px, $rt: -3px);
+    .links {
+        &__item {
+            font-size: 9px;
+        }
+
+        &__line--long {
+            width: 20%;
+            left: rem(30);
+        }
+
+        &__line--short {
+            right: rem(30);
+        } 
+    } 
+
+    .round-btn {
+        top: -730%;
+        width: rem(50);
+        height: rem(50); 
+        
+        &__inner::before {
+            @include absolute($tp: -2px, $rt: -3px);
+        }
+    }    
+}
+
+@media screen and (max-width: 620px) {
+    .links {
+        &__line--long {
+            width: 20.5%;
+            left: rem(20);
+        }
+
+        &__line--short {
+            right: rem(20);
+            width: rem(30);
+        } 
+    } 
+}
+
+@media screen and (max-width: 490px) {
+    .links {
+        &__line--long {
+            width: rem(40);
+        }
+
+        &__line--short {
+        display: none;
+        } 
+    } 
+
+    .round-btn {
+        right: auto;
+        left: 84%;
     }
 }
 
+@media screen and (max-width: 390px) {
+    .main-slider {
+        z-index: -1;
+    }
+}
 
 

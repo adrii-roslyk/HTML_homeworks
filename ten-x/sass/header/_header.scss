@@ -98,7 +98,7 @@
     top: 3px;
 }
 
-.btn-menu {
+.menu-btn {
     &__icon {
         width: rem(29); 
         height: rem(22); 
@@ -118,7 +118,7 @@
     &:last-child {
         display: none;
         @include absolute(0, 0, auto, 0);        
-        z-index: 1;    
+        z-index: 2;    
     }
 }
 
@@ -126,9 +126,10 @@
     display: none;
     padding-top: rem(22);
     animation: fall .4s ease-out;
+    z-index: 1;
                 
     &__item {        
-        padding-top: rem(27);
+        padding-top: rem(29);
         max-width: min-content;
         margin: 0 auto;
     }
