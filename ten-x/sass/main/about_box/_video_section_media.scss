@@ -1,4 +1,9 @@
 @media screen and (max-width: 1800px) {
+    .video-section__descript {
+        padding: rem(44) rem(70) rem(54);
+        font-size: rem(65);
+    }
+
     .play-block {
         width: rem(380);
         height: rem(380);
@@ -6,10 +11,15 @@
 
     .play-circle__inner::after {
         top: 10px;
-    }
+    }    
 }
 
 @media screen and (max-width: 1700px) {
+    .video-section__descript {
+        padding: rem(39) rem(70) rem(49);
+        font-size: rem(60);
+    }
+
     .play-block {
         width: rem(350);
         height: rem(350);
@@ -17,10 +27,15 @@
 
     .play-circle__inner::after {
         @include absolute($tp: 10px, $rt: 7px);
-    }
+    }    
 }
 
 @media screen and (max-width: 1600px) {
+    .video-section__descript {
+        padding: rem(35) rem(70) rem(45);
+        font-size: rem(55);
+    }
+
     .play-block {
         width: rem(340);
         height: rem(340);
@@ -31,7 +46,7 @@
         height: 9px;
         right: 9px;
         border-width: 6px;
-    }
+    }    
 }
 
 @media screen and (max-width: 1500px) {
@@ -66,6 +81,15 @@
 }
 
 @media screen and (max-width: 1280px) {
+    .video-section {
+        padding-top: rem(15);
+
+        &__descript {
+            padding: rem(31) rem(70) rem(41);
+            @include playfairDisplayReg($fs: rem(50), $lh: 1.45);
+        }
+    } 
+
     .play-block {
         width: rem(290);
         height: rem(290);
@@ -79,6 +103,10 @@
     .play-circle__inner::after {
         @include absolute($tp: 7px, $rt: 10px);        
     }
+
+    .signature {
+        width: 7.2%;
+    }
 }
 
 @media screen and (max-width: 1150px) {
@@ -89,6 +117,11 @@
 
     .play-circle__inner::after {
         @include absolute($tp: 6px, $rt: 8px);
+    }
+
+    .video-section__descript {
+        padding: rem(24) rem(50) rem(34);
+        font-size: rem(45);
     }
 }
 
@@ -109,12 +142,25 @@
 }
 
 @media screen and (max-width: 960px) {
-    .video-section__screen {
-        width: 63%;
-    }
+    .video-section {
+        padding-top: rem(5);
+
+        &__screen {
+            width: 63%;
+        }
+        
+        &__descript {            
+            font-size: rem(40);
+        }
+    } 
 }
 
 @media screen and (max-width: 880px) {
+    .video-section__descript {
+        padding: rem(20) rem(50) rem(30);
+        font-size: rem(35);
+    }
+
     .play-block {
         width: rem(220);
         height: rem(220);
@@ -127,13 +173,21 @@
 
     .play-circle__inner::after {
         top: 3px;
-    }
+    }    
 }
 
 @media screen and (max-width: 760px) {
-    .video-section__screen {
-        width: 70%;
-    }
+    .video-section {
+        padding-top: rem(0);        
+
+        &__screen {
+            width: 70%;
+        }
+
+        &__descript {
+            padding-top: rem(15);            
+        }
+    } 
 
     .play-block__inner--anim {
         width: 47%;
@@ -141,9 +195,26 @@
     }    
 }
 
+@media screen and (max-width: 690px) {
+    .video-section__descript {        
+        font-size: rem(30);
+    }
+
+    .signature {
+        min-width: 60px;
+    }
+}
+
 @media screen and (max-width: 620px) {
-    .video-section__screen {
-        width: 80%;
+    .video-section {
+        &__screen {
+            width: 80%;
+        } 
+
+        &__descript {
+            padding: rem(10) rem(30) rem(25);  
+            font-size: rem(27);          
+        }
     }
 
     .play-block {
@@ -168,8 +239,16 @@
 }
 
 @media screen and (max-width: 490px) {
-    .video-section__screen {
-        width: 90%;
+    .video-section {
+        &__screen {
+            width: 90%;
+        } 
+
+        &__descript {
+            font-size: rem(25);
+            padding-left: rem(15);
+            padding-right: rem(15);
+        }
     }
 
     .play-block {
@@ -182,12 +261,22 @@
         height: 6px;
         border-width: 3px;
     }
+
+    .signature {
+        min-width: 50px;
+    }
 }
 
 @media screen and (max-width: 390px) {
-    .video-section__screen {
-        width: 100%;
-    }
+    .video-section {
+        &__screen {
+            width: 100%;
+        }
+
+        &__descript {
+            font-size: rem(20);
+        }
+    } 
 
     .play-block {
         width: rem(140);

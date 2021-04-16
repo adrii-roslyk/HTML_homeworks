@@ -60,7 +60,7 @@
 
     &__outer {
         @include center;        
-        //visibility: hidden;
+        visibility: hidden;
         border: 2px solid $actionOrange {
             radius: 50%;
         }
@@ -97,7 +97,7 @@
             width: 19%;
             max-width: 342px;
             background-image: linear-gradient(90deg, $linkActColor 0%, $linePink 100%);
-            /*
+            
             &::after {
                 content:'';
                 width: 13px;
@@ -107,7 +107,7 @@
                     radius: 50%;
                 };
                 background: $linkHvrColor padding-box;
-            }*/
+            }
         }
 
         &--short {
@@ -123,8 +123,7 @@
     width: rem(106);
     height: rem(106);
        
-    &__outer {
-        transform: rotate(-45deg);//del
+    &__outer {        
         @include absolute(0px, 0px, 0px, 0px);
         @extend %circle-border;
         animation: big-rotate 1s ease-in-out infinite;
