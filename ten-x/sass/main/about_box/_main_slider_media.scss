@@ -41,20 +41,21 @@
     }
 
     .dots {
+        width: 100px;
+
         &__inner {
             width: 4px;
             height: 4px;
         }
     
-        &__outer {
-            border-width: 1px;
-            width: rem(20);
-            height: rem(20);
+        &__outer {            
+            width: 20px;
+            height: 20px;
         }
     }
 
     .links {    
-        top: 46.5%;
+        top: 45%;
 
         &__line--long {
             width: 16.7%;
@@ -76,7 +77,7 @@
         height: rem(90);
 
         &__inner::before {
-            @include absolute($tp: 7px, $rt: 2px);
+            top: 7px;
         }
     }
 
@@ -92,6 +93,20 @@
         letter-spacing: rem(33);
     }
 
+    .dots {
+        width: 80px;
+        
+        &__inner {
+            width: 3px;
+            height: 3px;
+        }
+    
+        &__outer {
+            width: 17px;
+            height: 17px;
+        }
+    }
+
     .links__item {
         font-size: 14px;
     }
@@ -103,7 +118,7 @@
 
 @media screen and (max-width: 1366px) {
     .main-slider__descript {
-        margin-bottom: rem(48);
+        margin-bottom: rem(45);
         padding: rem(22) 0 rem(22) rem(30);        
         font-size: rem(21);
         letter-spacing: rem(31);
@@ -113,28 +128,15 @@
         top: -830%;
 
         &__inner::before {
-            @include absolute($tp: 5px, $rt: 2px);
+            width: 7px;
+            height: 7px;
+            border-width: 3px;
+            @include absolute($tp: 5px, $rt: 5px);
         }
     }    
 
-    .dots {
-        &__item:not(:last-child) {
-            margin-right: 4px;            
-        }
-            
-        &__inner {
-            width: 3px;
-            height: 3px;
-        }
-    
-        &__outer {
-            width: rem(18);
-            height: rem(18);
-        }
-    }
-
     .links {    
-        top: 48.5%;
+        top: 47%;
         
         &__item {
             font-size: 13px;
@@ -159,7 +161,7 @@
     }
 
     .links {
-        top: 46.5%;
+        top: 46%;
         
         &__line {
             top: -470%;
@@ -179,21 +181,21 @@
         height: rem(80);
 
         &__inner::before {
-            @include absolute($tp: 3px, $rt: 1px);
+            @include absolute($tp: 4px, $rt: 3px);
         }
     }    
 }
 
 @media screen and (max-width: 1150px) {
     .main-slider__descript {
-        margin-bottom: rem(40);               
+        margin-bottom: rem(20);               
         font-size: rem(19);
         letter-spacing: rem(28);
     }
 
-    .links {
-        top: 47%;
-
+    .links {  
+        top: 48%;
+        
         &__line {
             top: -480%;
 
@@ -207,16 +209,18 @@
         }
     }
     
-
-    .dots {      
+    .dots {     
+        width: 70px;
+        
         &__inner {
             width: 2px;
             height: 2px;
         }
     
         &__outer {
-            width: rem(14);
-            height: rem(14);
+            border-width: 1px;
+            width: 14px;
+            height: 14px;
         }
     }
 
@@ -225,19 +229,28 @@
         height: rem(70);
 
         &__inner::before {
-            @include absolute($tp: 2px, $rt: -1px);
+            @include absolute($tp: 3px, $rt: 1px);
         }
     }    
 }
 
 @media screen and (max-width: 960px) {
     .main-slider__descript {
-        margin-bottom: rem(35);
+        margin-bottom: rem(15);
         font-size: rem(15);        
     }
 
+    .dots {     
+        width: 60px;       
+            
+        &__outer {            
+            width: 12px;
+            height: 12px;
+        }
+    }    
+
     .links {
-        top: 48%;
+        top: 49%;
 
         &__line--long {
             width: 17.9%;
@@ -258,10 +271,10 @@
     .round-btn {
         top: -770%;        
         width: rem(60);
-        height: rem(60);
-        
+        height: rem(60);  
+
         &__inner::before {
-            @include absolute($tp: 1px, $rt: -3px);
+            @include absolute($tp: 2px, $rt: 0px);
         }
     }
 }
@@ -272,14 +285,15 @@
         width: 60%;
     }
 
-    .main-slider__descript {
-        margin-bottom: rem(15);
+    .main-slider__descript {        
+        padding: rem(15) rem(15) rem(15) rem(40);
+        margin-bottom: rem(5);
         font-size: rem(14);    
         line-height: 2.5;    
     }
 
     .links {
-        top: 44%;
+        top: 45%;
 
         &__line--long {
             width: 19.5%;
@@ -288,11 +302,16 @@
 }
 
 @media screen and (max-width: 760px) {
-    .main-slider__descript {
-        margin-bottom: rem(5);           
-    }
+    .dots {     
+        &__outer {            
+            width: 11px;
+            height: 11px;
+        }
+    }    
 
     .links {
+        top: 44%;
+
         &__item {
             font-size: 9px;
         }
@@ -313,16 +332,39 @@
         height: rem(50); 
         
         &__inner::before {
-            @include absolute($tp: -2px, $rt: -3px);
+            @include absolute($tp: -1px, $rt: -1px);
         }
     }    
 }
 
 @media screen and (max-width: 620px) {
+    .main-slider__descript {
+        padding: rem(10) rem(0) rem(10) rem(25);
+        margin-bottom: 0;           
+    }
+
+    .dots {     
+        width: 60px;       
+            
+        &__outer {            
+            width: 9px;
+            height: 9px;
+        }
+    }    
+
     .links {
+        top: 46%;
+
         &__line--long {
-            width: 20.5%;
+            width: 20.1%;
             left: rem(20);
+
+            &::after {
+                width: 8px;
+                height: 8px;
+                @include absolute($tp: -7px, $rt: -9px);
+                border-width: 3px; 
+            }
         }
 
         &__line--short {
@@ -330,10 +372,37 @@
             width: rem(30);
         } 
     } 
+
+    .round-btn__inner::before {
+        width: 6px;
+        height: 6px;
+        @include absolute($tp: 1px, $rt: -2px);
+    }
 }
 
 @media screen and (max-width: 490px) {
+    .main-slider__descript {
+        line-height: 2.2;        
+    }
+
+    .dots {     
+        width: 50px;
+        
+        &__inner {
+            width: 2px;
+            height: 2px;
+        }
+    
+        &__outer {
+            border-width: 1px;
+            width: 8px;
+            height: 8px;
+        }
+    }
+
     .links {
+        top: 47%;
+
         &__line--long {
             width: rem(40);
         }
@@ -351,8 +420,40 @@
 
 @media screen and (max-width: 390px) {
     .main-slider {
-        z-index: -1;
+        padding-top: rem(35);     
+    }
+
+    .links {
+        top: 0px;
+
+        &__item {
+            transform: none;
+        }
+
+        &__line--long {
+            display: none;
+        }
+    } 
+
+    .round-btn {
+        @include absolute($tp: 760%, $rt: 0);
     }
 }
 
+@media screen and (max-width: 350px) {
+    .main-slider {
+        &__item{
+            min-width: 230px;
+        }   
 
+        &__descript {
+            margin-right: rem(-20);
+            padding: rem(10) rem(0) rem(10) rem(6);
+            text-align: center;
+        }
+    }
+
+    .round-btn {
+        top: 700%;
+    }
+}

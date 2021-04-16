@@ -36,6 +36,12 @@
     .socials--vertical {
         margin-top: -8px;
     }
+
+    .circle__inner::before {
+        width: 7px;
+        height: 7px;              
+        top: 2px;
+    }
 }
 
 @media screen and (max-width: 1280px) {
@@ -117,10 +123,6 @@
     .logo {
         margin-right: rem(50);
     }  
-
-    .circle__inner::before {
-        @include absolute($tp: 3px, $rt: 2px);
-    }
 }
 
 @media screen and (max-width: 760px) {
@@ -152,6 +154,14 @@
 
     .circle__inner::before {
         @include absolute($tp: 2px, $rt: 2px);
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .circle__inner::before {
+        width: 6px;
+        height: 6px;              
+        top: 3px;
     }
 }
 
@@ -220,8 +230,8 @@
         &__item {
             background: linear-gradient(to bottom, #191e22, $pageBgColor);
             margin: 0 auto;
-            padding: rem(16) 0 rem(16) 0;
-            max-width: 100px;
+            padding: rem(21) 0 rem(21) 0;
+            max-width: 100%;            
             text-align: center;
             
             &:first-child {
@@ -234,15 +244,14 @@
             }
         }
         
-        &__link {
+        &__link {          
             padding-left: rem(5);
         }
     }
 
     .socials--vertical {
         margin: auto;
-        @include absolute (rem(130),0,auto,0);
-        z-index: 1;
+        @include absolute (rem(130), 0, auto, 0);        
     }
 }
 

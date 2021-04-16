@@ -124,9 +124,10 @@
 
 .submenu {
     display: none;
-    padding-top: rem(22);
-    animation: fall .4s ease-out;
+    position: relative;
     z-index: 1;
+    padding-top: rem(22);
+    animation: fall .4s ease-out;    
                 
     &__item {        
         padding-top: rem(29);
@@ -134,7 +135,7 @@
         margin: 0 auto;
     }
 
-    &__link {
+    &__link {        
         padding-left: 3px;
         @extend %menu-link;        
     }    
@@ -208,7 +209,7 @@
     animation: rotate 1s ease-in-out infinite;
     z-index: -1;
     display: none;
-
+    
     &__inner {
         @include absolute(-1px, -1px, -1px, -1px);
         @extend %circle-border;

@@ -30,20 +30,19 @@
 }
 
 .dots {
-    @include flex($jc: center);
+    margin: 0 auto;
+    width: 115px;
+    @include flex ($jc: space-between);    
 
     .active {
         @extend %active-dot;
     }
     
     &__item {
-        position: relative;
-        max-width: min-content;
+        position: relative;        
+        width: 25px;
+        height: 25px;
         border-radius: 50%;
-
-        &:not(:last-child) {
-            margin-right: 5px;
-        }
 
         &:hover {
             cursor: pointer;
@@ -56,16 +55,17 @@
         border-radius: 50%;
         background-color: $dotColor;
         width: 5px;
-        height: 5px;
+        height: 5px;              
     }
 
     &__outer {
-        visibility: hidden;
+        @include center;        
+        //visibility: hidden;
         border: 2px solid $actionOrange {
             radius: 50%;
         }
-        width: rem(25);
-        height: rem(25);
+        width: 100%;
+        height: 100%;
     }
 }
 
@@ -97,7 +97,7 @@
             width: 19%;
             max-width: 342px;
             background-image: linear-gradient(90deg, $linkActColor 0%, $linePink 100%);
-            
+            /*
             &::after {
                 content:'';
                 width: 13px;
@@ -107,7 +107,7 @@
                     radius: 50%;
                 };
                 background: $linkHvrColor padding-box;
-            }
+            }*/
         }
 
         &--short {
@@ -124,6 +124,7 @@
     height: rem(106);
        
     &__outer {
+        transform: rotate(-45deg);//del
         @include absolute(0px, 0px, 0px, 0px);
         @extend %circle-border;
         animation: big-rotate 1s ease-in-out infinite;

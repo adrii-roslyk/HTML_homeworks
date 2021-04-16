@@ -1,0 +1,205 @@
+@media screen and (max-width: 1800px) {
+    .play-block {
+        width: rem(380);
+        height: rem(380);
+    }
+
+    .play-circle__inner::after {
+        top: 10px;
+    }
+}
+
+@media screen and (max-width: 1700px) {
+    .play-block {
+        width: rem(350);
+        height: rem(350);
+    }
+
+    .play-circle__inner::after {
+        @include absolute($tp: 10px, $rt: 7px);
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .play-block {
+        width: rem(340);
+        height: rem(340);
+    }
+    
+    .play-circle__inner::after {
+        width: 9px;
+        height: 9px;
+        right: 9px;
+        border-width: 6px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .play-block {
+        width: rem(320);
+        height: rem(320);
+    }
+
+    .play-circle__inner::after {
+        @include absolute($tp: 9px, $rt: 8px);
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .play-block {
+        width: rem(300);
+        height: rem(300);
+    }
+
+    .play-circle__inner::after {
+        top: 6px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .play-circle__inner::after {
+        width: 7px;
+        height: 7px;
+        @include absolute($tp: 8px, $rt: 9px);
+        border-width: 4px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .play-block {
+        width: rem(290);
+        height: rem(290);
+        
+        &__inner--anim {
+            width: 44.5%;
+            height: 44.5%; 
+        }
+    }
+
+    .play-circle__inner::after {
+        @include absolute($tp: 7px, $rt: 10px);        
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .play-block {
+        width: rem(270);
+        height: rem(270);
+    }
+
+    .play-circle__inner::after {
+        @include absolute($tp: 6px, $rt: 8px);
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .play-block {
+        width: rem(240);
+        height: rem(240);
+
+        &__inner--anim {
+            width: 45%;
+            height: 45%; 
+        }
+    }
+
+    .play-circle__inner::after {
+        @include absolute($tp: 5px, $rt: 5px);
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .video-section__screen {
+        width: 63%;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .play-block {
+        width: rem(220);
+        height: rem(220);
+
+        &__inner--anim {
+            width: 46%;
+            height: 46%; 
+        }
+    }
+
+    .play-circle__inner::after {
+        top: 3px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .video-section__screen {
+        width: 70%;
+    }
+
+    .play-block__inner--anim {
+        width: 47%;
+        height: 47%;        
+    }    
+}
+
+@media screen and (max-width: 620px) {
+    .video-section__screen {
+        width: 80%;
+    }
+
+    .play-block {
+        width: rem(200);
+        height: rem(200);
+    }
+
+    .play-circle {
+        border-width: 1px;
+        border-top: 1px solid $actionOrange;
+
+        &__inner {
+            @include absolute(-1px, -1px, -1px, -1px);
+            border-width: 1px;
+            border-top: 1px solid $actionOrange;
+
+            &::after {
+                right: 3px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .video-section__screen {
+        width: 90%;
+    }
+
+    .play-block {
+        width: rem(170);
+        height: rem(170);
+    }
+
+    .play-circle__inner::after {
+        width: 6px;
+        height: 6px;
+        border-width: 3px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .video-section__screen {
+        width: 100%;
+    }
+
+    .play-block {
+        width: rem(140);
+        height: rem(140);
+
+        &__inner--anim {
+            width: 48%;
+            height: 48%; 
+        }
+    }
+
+    .play-circle__inner::after {
+        @include absolute($tp: 1px, $rt: 1px);
+    }
+}

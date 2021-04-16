@@ -1,20 +1,24 @@
 .video-section {
-    padding: 33px 0 85px;
+    padding: rem(33) 0 rem(85);
     @include flex($fd: column, $ai: center);
     
-    &__video {
-        width: 1000px;
+    &__screen {
+        width: 55.6%;
         max-width: 1000px;
-        height: 463px;
-        max-height: 463px;
-        //background-color: brown;
-        @include flex($jc: center, $ai: center);
-        
+        height: 100%;
+        max-height: 463px;        
+        background-color: $trnspBlack;
+        @include flex($jc: center, $ai: center);        
+    }
+
+    &__container {
+        position: relative;
+        padding-top: 46.3%;
     }
 
     &__descript {
-        padding: 47px 70px 59px;
-        @include playfairDisplayReg($fs: 70px, $lh: 1.429);
+        padding: rem(49) rem(70) rem(59);
+        @include playfairDisplayReg($fs: rem(70), $lh: 1.429);
         text-align: center;
         color: $txtContColor;
         user-select: none;        
@@ -22,14 +26,14 @@
 }
 
 .play-block {
-    position: relative;
-    width: 403px;
-    height: 403px;
+    @include center;
+    width: rem(403);
+    height: rem(403);
         
     &__inner {
         @include center;
         border-radius: 50%;
-        /*                       
+                               
         &--1 {
             animation: ripple 3s linear infinite;
         }
@@ -45,7 +49,7 @@
         &--4 {
             animation: ripple 3s linear infinite 3s;
         }
-        */
+        
         &--static {            
             width: 39.4%;
             max-width: 159px;
@@ -54,7 +58,7 @@
             border-radius: 50%;
             background-image: url('../../../img/play_bg.png');
             background-size: 100%;
-            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 0px 20px 0px $shadowColor;
             
             &:hover {
                 cursor: pointer;
@@ -103,22 +107,21 @@
 }
 
 .play-circle {
-    //transform: rotate(-45deg); //delete
     @include absolute(0px, 0px, 0px, 0px);
     @extend %circle-border-wide;
-    //animation: rotate 1s ease-in-out infinite;
+    animation: rotate 1s ease-in-out infinite;
 
     &__inner {
         @include absolute(-2px, -2px, -2px, -2px);
         @extend %circle-border-wide;
-        //animation: flex 1s ease-in-out infinite;
+        animation: flex 1s ease-in-out infinite;
     
         &:after {
             content:'';
             width: 10px;
             height: 10px;
             @include absolute($tp: 13px, $rt: 11px);
-            border: 7px solid rgba(237, 117, 27, 0.231);
+            border: 7px solid $trnspOrange;
             border-radius: 50%;
             background: $actionOrange padding-box;
         }
