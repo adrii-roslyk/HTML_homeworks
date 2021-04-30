@@ -1,5 +1,5 @@
 .video-section {
-    padding: rem(33) 0 rem(85);
+    padding: 1.84% 0 4.73%;
     @include flex($fd: column, $ai: center);
     
     &__screen {
@@ -16,9 +16,9 @@
         padding-top: 46.3%;
     }
 
-    &__descript {
+    &__descript {        
         padding: rem(49) rem(70) rem(59);
-        @include playfairDisplayReg($fs: rem(70), $lh: 1.429);
+        @include font($ff: $playDispReg, $fs: rem(70), $lh: 1.429);        
         text-align: center;
         color: $txtContColor;
         user-select: none;        
@@ -33,7 +33,7 @@
     &__inner {
         @include center;
         border-radius: 50%;
-                               
+                            
         &--1 {
             animation: ripple 3s linear infinite;
         }

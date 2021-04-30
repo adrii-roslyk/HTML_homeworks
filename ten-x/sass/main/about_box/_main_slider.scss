@@ -16,8 +16,8 @@
     
     &__descript {
         margin-bottom: rem(60);
-        padding: rem(35) 0 rem(35) rem(50);        
-        @include playfairDisplayReg($fs: rem(28), $ls: rem(45));
+        padding: rem(35) 0 rem(35) rem(50);   
+        @include font($ff: $playDispReg, $fs: rem(28), $ls: rem(45));             
         text-align: center;
         color: $dotColor;
         text-transform: uppercase;

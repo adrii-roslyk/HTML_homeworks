@@ -50,7 +50,7 @@ function showSlides(direction) {
         slides[slideIndex - 1].style.cssText = "animation: arrive .5s, leave .5s 3.5s;";
     }
     dots[slideIndex - 1].className += " active";
-    //slideIndex++;
+    slideIndex++;
     window.timeoutID = setTimeout(showSlides, 4000);
 }
 

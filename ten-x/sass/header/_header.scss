@@ -53,7 +53,7 @@
     }
 
     &__num {
-        @include timesNewRomanReg($fs: 16px, $lh:1, $ls: 3px); 
+        @include font($ff: $defaultFnt, $fs: 16px, $lh:1, $ls: 3px);         
         color: $phoneGrey               
     }
 

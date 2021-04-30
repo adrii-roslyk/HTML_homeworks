@@ -1,0 +1,339 @@
+@media screen and (max-width: 1800px) {
+    $postTitleFs: rem(40.7);
+    $postTxtFs: rem(20.4);
+
+    .post-01 {
+        &__title {
+            font-size: $postTitleFs;
+        }
+
+        &__txt {
+            font-size: $postTxtFs;            
+        }
+    }    
+
+    .orange-btn {
+        width: rem(185);
+        
+        &__button {
+            font-size: rem(13.23);
+            letter-spacing: 2.7px;
+        }
+    }
+
+    .number {
+        font-size: $postTitleFs;
+    }
+}
+
+@media screen and (max-width: 1700px) {
+    $postTitleFs: rem(37.4);
+    $postTxtFs: rem(19.3);
+
+    .post-01 {
+        &__title {
+            font-size: $postTitleFs;
+        }
+
+        &__txt {
+            font-size: $postTxtFs;            
+        }
+    }
+
+    .orange-btn {
+        width: rem(170);  
+        
+        &__button {
+            font-size: rem(12.45);
+            letter-spacing: 2.5px;
+        }        
+    }
+
+    .number {
+        font-size: $postTitleFs;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    $postTitleFs: rem(34.1);
+    $postTxtFs: rem(18.2);
+
+    .post-01 {
+        &__title {
+            font-size: $postTitleFs;
+        }
+
+        &__txt {
+            font-size: $postTxtFs;            
+        }
+    }
+
+    .orange-btn {
+        width: rem(155);
+        
+        &__button {
+            font-size: rem(11.7);
+            letter-spacing: 2.25px;
+        }        
+    }
+
+    .number {
+        font-size: $postTitleFs;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    $postTitleFs: rem(31.5);
+    $postTxtFs: rem(17);
+
+    .post-01 {
+        &__title {
+            font-size: $postTitleFs;
+        }
+
+        &__txt {
+            font-size: $postTxtFs;                       
+        }
+    }
+
+    .orange-btn {
+        width: rem(143);
+        
+        &__button {
+            font-size: rem(10.9);
+            letter-spacing: 2px;
+        }        
+    }
+
+    .number {
+        font-size: $postTitleFs;
+    }
+}
+
+@media screen and (max-width: 1150px){
+    $postTitleFs: rem(24.8);
+    $postTxtFs: rem(14.7);
+
+    .post-01 {
+        &__title {
+            font-size: $postTitleFs;            
+        }
+
+        &__txt {
+            font-size: $postTxtFs;                            
+        }
+    }
+
+    .orange-btn {
+        width: rem(123);
+        
+        &__button {
+            font-size: rem(9.7);
+            letter-spacing: 1.6px;
+        }        
+    }
+
+    .number {
+        font-size: $postTitleFs;
+    }
+}
+
+@media screen and (max-width: 960px){
+    $postTitleFs: rem(21.5);
+    $postTxtFs: rem(13.5);
+
+    .post-01 {
+        &__title {
+            font-size: $postTitleFs;            
+        }
+
+        &__txt {
+            font-size: $postTxtFs;                               
+        }
+    }
+
+    .orange-btn {
+        width: rem(104);
+        
+        &__button {
+            font-size: rem(8.5);
+            letter-spacing: 1.3px;
+        }        
+    }
+
+    .number {
+        font-size: $postTitleFs;
+    }
+}
+
+@media screen and (max-width: 880px){
+    $postTitleFs: rem(18);
+    $postTxtFs: rem(12.3);
+
+    .post-01 {
+        &__title {
+            font-size: $postTitleFs;
+        }
+
+        &__txt {
+            font-size: $postTxtFs;                       
+        }
+    }
+
+    .number {
+        font-size: $postTitleFs;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    $postTitleFs: rem(34.1);
+    $postTxtFs: rem(18.2);
+
+    .blog-box__item:nth-child(2) {
+        margin-bottom: 10%;
+    }
+    
+    .post-01 {
+        flex-wrap: wrap;
+
+        &__picture {
+            width: 100%;
+        }
+
+        &__article {
+            width: 100%;
+            margin-top: 25%;
+            text-align: center;
+        }
+
+        &__title {
+            width: 100%;
+            font-size: $postTitleFs;            
+        }
+
+        &__txt {
+            font-size: $postTxtFs;  
+            padding-right: 0;                                
+        }
+    }   
+    
+    .post-02 {
+        position: relative;
+        flex-wrap: wrap;
+
+        &__article {
+            position: absolute;
+            margin-top: 102.38%;
+        }
+
+        &__title {
+            padding-left: 0;                  
+        }
+
+        &__txt {              
+            padding-left: 0;                          
+        }
+
+        div:last-child {
+            margin: 0 auto;
+        }
+    }
+
+    .orange-btn {
+        width: rem(155);
+        margin: 0 auto;
+        
+        &__button {
+            font-size: rem(11.7);
+            letter-spacing: 2.25px;
+        }        
+    }
+
+    .number {
+        font-size: $postTitleFs;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    $postTitleFs: rem(24.8);
+    $postTxtFs: rem(16.5);
+
+    .post-01 {
+        &__title {
+            font-size: $postTitleFs;            
+        }
+
+        &__txt {
+            font-size: $postTxtFs;                                  
+        }
+    }
+
+    .orange-btn {
+        width: rem(123);
+        
+        &__button {
+            font-size: rem(9.7);
+            letter-spacing: 1.6px;
+        }        
+    }
+
+    .number {
+        font-size: $postTitleFs;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    $postTitleFs: rem(22);
+    $postTxtFs: rem(15); 
+
+    .post-01 {
+        &__title {
+            font-size: $postTitleFs;            
+        }
+
+        &__txt {
+            font-size: $postTxtFs;                                  
+        }
+    }
+
+    .orange-btn {
+        width: rem(104);
+        
+        &__button {
+            font-size: rem(8.5);
+            letter-spacing: 1.3px;
+        }        
+    }
+
+    .number {
+        font-size: $postTitleFs;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    $postTitleFs: rem(18);
+    $postTxtFs: rem(13.5);
+
+    .post-01 {
+        &__title {
+            font-size: $postTitleFs;            
+        }
+
+        &__txt {
+            font-size: $postTxtFs;    
+        }
+    }
+
+    .orange-btn {
+        width: rem(104);
+        
+        &__button {
+            font-size: rem(8.5);
+            letter-spacing: 1.3px;
+        }        
+    }
+
+    .number {
+        font-size: $postTitleFs;
+    }
+}

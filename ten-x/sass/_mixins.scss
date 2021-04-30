@@ -25,30 +25,11 @@
     transform: translate(50%, -50%);
 }
 
-@mixin latoBold ($fs: medium, $lh: normal, $ls: normal) {
+@mixin font($ff: $defaultFnt, $fs: medium, $lh: normal, $ls: normal) {
     font: {
-        family: "Lato Bold", sans-serif;
+        family: $ff;
         size: $fs;
-    }        
+    }
     line-height: $lh;
     letter-spacing: $ls;
 }
-
-@mixin timesNewRomanReg ($fs: medium, $lh: normal, $ls: normal) {
-    font: {
-        family: "Times New Roman", serif;
-        size: $fs;
-    }        
-    line-height: $lh;
-    letter-spacing: $ls;
-}
-
-@mixin playfairDisplayReg ($fs: medium, $lh: normal, $ls: normal) {
-    font: {
-        family: "Playfair Display Regular", serif;
-        size: $fs;
-    }        
-    line-height: $lh;
-    letter-spacing: $ls;
-}
-

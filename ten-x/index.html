@@ -45,11 +45,11 @@
                         <div class="burger-menu">
                             <div class="burger-menu__btn">
                                 <div class="menu-btn" id="open">
-                                    <img class="menu-btn__icon" src="img/icon_menu.png" alt="menu">
+                                    <img class="menu-btn__icon" src="img/icon_menu.png">
                                     <img class="menu-btn__icon" id="icon-open" src="img/icon_menu_pink.png">
                                 </div>
                                 <div class="menu-btn" id="close">
-                                    <img class="menu-btn__icon" src="img/icon_close_menu.png" alt="close">
+                                    <img class="menu-btn__icon" src="img/icon_close_menu.png">
                                     <img class="menu-btn__icon" id="icon-close" src="img/icon_close_menu_pink.png">
                                 </div>
                             </div>
@@ -73,8 +73,7 @@
                 <ul class="socials socials--vertical">
                     <li class="socials__item">
                         <a class="icon-link" href="#" target="_blank">
-                            <img class="icon-link__img icon-link__img--inst" src="img/icon_instagram.png"
-                                alt="instagram">
+                            <img class="icon-link__img icon-link__img--inst" src="img/icon_instagram.png" alt="instagram">
                             <img class="icon-link__img icon-link__img--inst" src="img/icon_instagram_gradient.png">
                         </a>
                         <div class="circle">
@@ -114,9 +113,9 @@
     </header>
 <!--end_header//////////////////////////////////////////////////-->
 <!--main//////////////////////////////////////////////////-->
-    <main class="page-main">
+    <main class="page-main">        
         <div class="wrapper">
-<!--about_block---------------------------------------------------->
+<!--about-box_block---------------------------------------------------->
             <div class="about-box">
                 <div class="main-slider">
                     <div class="main-slider__item">
@@ -197,11 +196,83 @@
                     <img class="signature" src="img/signature.png" alt="signature">
                 </div>
             </div>
-<!--end_about_block---------------------------------------------------->
-            <div class="blog">
-                <div class="blog__item blog__item--top"></div>
-                <div class="blog__item blog__item--bottom"></div>
+<!--end_about-box_block---------------------------------------------------->
+<!--blog-box_block---------------------------------------------------->
+            <div class="blog-box">
+                <div class="blog-box__background">
+                    <img src="img/map_background.png">
+                </div>
+                <div class="blog-box__item">
+                    <div class="post-01">
+                        <div class="post-01__picture">
+                            <img class="post-01__img" src="img/man.jpg" alt="man">
+                            <img class="post-01__img" id="img-orng-boxes" src="img/orange_boxes.png" alt="orange boxes">
+                            <img class="post-01__img" id="img-bottle" src="img/bottle.jpg" alt="bottle">
+                            <div class="arrow-btn arrow-btn--left" id="arrow1">
+                                <img class="arrow-btn__icon arrow-btn__icon--left" src="img/arrow_bt.png">
+                                <img class="arrow-btn__icon arrow-btn__icon--left" src="img/arrow_bt_pink.png">
+                                <img class="arrow-btn__icon arrow-btn__icon--left" src="img/arrow_bt_purple.png">
+                            </div>
+                            <div class="number number--first">
+                                <span class="number__item">01</span><span class="number__item">/05</span>
+                            </div>
+                        </div>
+                        <article class="post-01__article">
+                            <h2 class="post-01__title">
+                                Strategy & Creative<br>
+                                We design and build digital products, 
+                                and services we&nbsp;believe&nbsp;in.
+                            </h2>
+                            <p class="post-01__txt">
+                                Strategy is not something you can retrospectively apply in order to
+                                make irrelevant ideas seem coherent strategists start out with a 
+                                clear approach to ensure our creative proposal will match your 
+                                business&nbsp;needs.
+                            </p>
+                            <div class="orange-btn">
+                                <div class="orange-btn__inner">
+                                    <button class="orange-btn__button">learn more</button>
+                                </div>
+                            </div>                                       
+                        </article>
+                    </div>
+                </div>
+                <div class="blog-box__item">
+                    <div class="post-02">                        
+                        <article class="post-02__article">
+                            <h2 class="post-02__title">
+                                We are bunch of super-scilled<br> 
+                                guys and gals who love<br>
+                                to create websites.
+                            </h2>
+                            <p class="post-02__txt">
+                                Filema Rodion proposes individual, airtight packages that keep the
+                                product's characteristics unchanged for treats for the marriage,
+                                baptism and every&nbsp;social&nbsp;event.
+                            </p>
+                            <div class="orange-btn">
+                                <div class="orange-btn__inner">
+                                    <button class="orange-btn__button">learn more</button>
+                                </div>
+                            </div>                      
+                        </article>
+                        <div class="post-02__picture">
+                            <img class="post-02__img" src="img/gramophone.jpg" alt="gramophone">
+                            <img class="post-02__img" id="img-prpl-boxes" src="img/pink_purple_boxes.png" alt="pink purple boxes">
+                            <img class="post-02__img" id="img-vinyl" src="img/vinyl.jpg" alt="vinyl">
+                            <div class="arrow-btn arrow-btn--right" id="arrow2">
+                                <img class="arrow-btn__icon arrow-btn__icon--right" src="img/arrow_bt.png">
+                                <img class="arrow-btn__icon arrow-btn__icon--right" src="img/arrow_bt_pink.png">
+                                <img class="arrow-btn__icon arrow-btn__icon--right" src="img/arrow_bt_purple.png">
+                            </div>
+                            <div class="number number--second">
+                                <span class="number__item">02</span><span class="number__item">/05</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+<!--end_blog_block---------------------------------------------------->            
             <div class="projects">
                 <h2 class="projects__title">SELECTED PROJECTS</h2>
                 <div class="projects__container">
@@ -283,7 +354,8 @@
     </footer>
 <!--end_footer//////////////////////////////////////////////////-->
     <script src="js/toggle_menu.js"></script>
-    <script src="js/slider.js"></script>    
+    <script src="js/slider.js"></script>   
+    <script src="js/toggle_blog.js"></script> 
 </body>
 
 </html>

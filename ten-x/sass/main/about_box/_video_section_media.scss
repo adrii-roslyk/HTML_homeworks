@@ -82,11 +82,10 @@
 
 @media screen and (max-width: 1280px) {
     .video-section {
-        padding-top: rem(15);
-
         &__descript {
             padding: rem(31) rem(70) rem(41);
-            @include playfairDisplayReg($fs: rem(50), $lh: 1.45);
+            font-size: rem(50);
+            line-height: 1.45;            
         }
     } 
 
@@ -142,9 +141,7 @@
 }
 
 @media screen and (max-width: 960px) {
-    .video-section {
-        padding-top: rem(5);
-
+    .video-section {       
         &__screen {
             width: 63%;
         }
@@ -177,9 +174,7 @@
 }
 
 @media screen and (max-width: 760px) {
-    .video-section {
-        padding-top: rem(0);        
-
+    .video-section {              
         &__screen {
             width: 70%;
         }
