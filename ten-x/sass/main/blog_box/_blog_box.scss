@@ -174,10 +174,9 @@
 }
 
 .orange-btn {    
-    width: rem(200);         
+    width: rem(200);            
 
-    &__inner {
-        @include flex($jc: center, $ai: center);
+    &__inner {        
         position: relative;
         width: 100%;
         padding-top: 27%;
@@ -193,7 +192,7 @@
         text-transform: uppercase;
         border: none;
         border-radius: 2px;
-        background-image: $oranBtnGrad;    
+        background-image: linear-gradient(35deg, $btnOrngDark 30%, $btnOrngLight 70%);    
         will-change: transform;      
         
         &:hover {
@@ -202,7 +201,7 @@
         }
 
         &:active {
-            transform: scale(0.95);            
+            transform: scale(0.98);            
             //box-shadow: inset 0px 0px 3px 0px $btnOrngDark;
             //border: 1px solid $btnOrngDark;
         }

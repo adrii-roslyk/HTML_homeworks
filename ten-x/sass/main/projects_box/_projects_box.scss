@@ -1,0 +1,198 @@
+.projects-box {
+    padding: 9.5% 1.667% 0 1.667%;
+    position: relative;
+    text-align: center; 
+    
+    &__background {       
+        img {
+            @include absolute($tp: 0, $lf: 0, $rt: 0); 
+            z-index: -10;           
+            width: 100%;
+            max-width: 1800px;                                
+        }                
+    }    
+
+    &__title {
+        @include font($ff: $playDispReg, $fs: rem(18), $ls: rem(11.5));
+        position: relative;
+        font-weight: 400;
+        color: $txtContColor;        
+        text-transform: uppercase;
+        padding: 0 0 5.5% 1%;  
+        
+        &::before {
+            content: '';
+            width: 2px;
+            height: 129px;
+            @include absolute($lf: 50%, $bt: 130%);   
+            //margin-left: -2px;        
+            background-image: linear-gradient(360deg, $btnOrngDark 10%, $btnOrngLight 90%);
+        }
+    }   
+}
+
+.projects {
+    @include flex($jc: space-between);
+    flex-wrap: wrap;  
+    height: max-content;      
+
+    &__item {        
+        position: relative;
+        margin: 0 1.724% 7.127% 1.724%; 
+        width: calc((100% - 3 * 1.724% * 2) / 3);
+        max-width: 520px;
+
+        &::before {
+            content: "";
+            display: block;
+            padding-top: 128.847%;             
+        }          
+    }    
+}
+
+.project-background {
+    visibility: hidden;
+    @include absolute($tp: 0, $rt: 0, $bt: 0, $lf: 0);     
+    background-image: linear-gradient(45deg, $linkActColor 10%, $linePink 90%);    
+}
+
+.project {    
+    @include center; 
+    width: 92.31%;
+    height: 94.03%;    
+    background-color: white;      
+    
+    &__img-link {
+        overflow: hidden; 
+        height: 73.018%;        
+    }
+
+    &__photo {        
+        margin: 0 auto;
+
+        &--end-of-thino {
+            width: 72%;
+            padding: 8% 0;
+        }
+
+        &--het-boerenveensche {
+            width: 61%;
+            padding-top: 3.5%;
+            margin-left: 15%;
+        }
+
+        &--bluerocket {
+            width: 115%;
+            padding: 5% 0 16%;
+            margin-left: -8%;
+        }
+
+        &--harmony-poliform {
+            width: 56%;
+            padding: 12% 0 6%;
+        }
+
+        &--rowenta-studiodry {
+            width: 95%;
+            padding: 16% 0 19%;
+            margin-left: 5%;
+        }
+
+        &--fritsch-durisotti {
+            width: 100%;
+            padding: 12% 0 7%;
+            margin-left: -2%;
+        }       
+    }
+
+    &__txt-content {
+        @include absolute($tp: 75%, $lf: 0, $rt: 0, $bt: 0);        
+
+        &>:last-child {              
+            @include absolute($rt: 50%, $bt: 0%);        
+            transform: translateX(50%);                                 
+        }
+
+        &>:last-child button {
+            top: auto;
+            bottom: -50%;
+        }
+    }
+
+    &__title {
+        @include font($ff: $proxNovSbld, $fs: rem(30), $lh: 1.067);                 
+    }   
+
+    &__polygon {
+        width: 25%;
+        height: 76.2%; 
+        background: transparent;
+
+        &--left {
+            float: left; 
+            shape-outside: polygon(0 0, 0 100%, 100% 100%); 
+            clip-path: polygon(0 0, 0 100%, 100% 100%); 
+        }
+    
+        &--right {
+            float: right; 
+            shape-outside: polygon(100% 0, 100% 100%, 0 100%); 
+            clip-path: polygon(100% 0, 100% 100%, 0 100%); 
+        }
+    }
+
+    &__description {        
+        @include font($ff: $proxNovSbld, $fs: rem(16), $lh: 1.5);
+        padding: 4% 0;      
+    }      
+}
+
+.triangle-btn {
+    visibility: hidden;
+    @include absolute($rt: -1px, $bt: -1px);       
+    width: 25%;    
+
+    &::before {
+        content: "";
+        display: block;
+        padding-top: 100%; 
+    }   
+    
+    &__inner {
+        @include absolute($tp: 0, $rt: 0, $bt: 0, $lf: 0);            
+        clip-path: polygon(100% 0, 100% 100%, 0 100%);
+        background-image: linear-gradient( 35deg, $btnOrngDark 0%, $btnOrngLight 100%);
+        
+        &:hover {
+            &>img:first-child {
+                display: none;
+            } 
+
+            &>img:nth-child(2) {
+                display: block;
+            }
+        }
+
+        &:active {
+            &>img:not(:last-child) {
+                display: none;
+            }
+
+            &>img:last-child {
+                display: block;
+            }
+        }
+    }  
+    
+    &__img {
+        @include absolute($rt: 15%, $bt: 23.34%);
+        width: 29.17%;
+        max-width: 35px;
+        user-select: none;
+        
+        &:not(:first-child) {
+            display: none;
+        }
+    }
+}
+

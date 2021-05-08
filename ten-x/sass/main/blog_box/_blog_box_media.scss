@@ -189,9 +189,13 @@
     $postTitleFs: rem(34.1);
     $postTxtFs: rem(18.2);
 
-    .blog-box__item:nth-child(2) {
-        margin-bottom: 10%;
-    }
+    .blog-box {
+        padding-bottom: 80%;
+
+        &__item:nth-child(2) {
+            margin-bottom: 10%;
+        }
+    } 
     
     .post-01 {
         flex-wrap: wrap;
@@ -257,6 +261,10 @@
 @media screen and (max-width: 690px) {
     $postTitleFs: rem(24.8);
     $postTxtFs: rem(16.5);
+
+    .blog-box {
+        padding-bottom: 75%;
+    }
 
     .post-01 {
         &__title {
