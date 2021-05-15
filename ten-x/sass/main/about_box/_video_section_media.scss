@@ -1,6 +1,9 @@
 @media screen and (max-width: 1800px) {
-    .video-section__descript {
+    .video-section>:nth-child(2) {
         padding: rem(44) rem(70) rem(54);
+    }
+
+    .big-text {
         font-size: rem(65);
     }
 
@@ -15,10 +18,13 @@
 }
 
 @media screen and (max-width: 1700px) {
-    .video-section__descript {
+    .video-section>:nth-child(2) {
         padding: rem(39) rem(70) rem(49);
-        font-size: rem(60);
     }
+
+    .big-text {
+        font-size: rem(60);
+    }    
 
     .play-block {
         width: rem(350);
@@ -31,10 +37,13 @@
 }
 
 @media screen and (max-width: 1600px) {
-    .video-section__descript {
+    .video-section>:nth-child(2) {
         padding: rem(35) rem(70) rem(45);
-        font-size: rem(55);
     }
+
+    .big-text {
+        font-size: rem(55);
+    }     
 
     .play-block {
         width: rem(340);
@@ -81,12 +90,13 @@
 }
 
 @media screen and (max-width: 1280px) {
-    .video-section {
-        &__descript {
-            padding: rem(31) rem(70) rem(41);
-            font-size: rem(50);
-            line-height: 1.45;            
-        }
+    .video-section>:nth-child(2) {
+        padding: rem(31) rem(70) rem(41);
+    }
+
+    .big-text {
+        font-size: rem(50);
+        line-height: 1.45; 
     } 
 
     .play-block {
@@ -109,6 +119,14 @@
 }
 
 @media screen and (max-width: 1150px) {
+    .video-section>:nth-child(2) {
+        padding: rem(24) rem(50) rem(34);
+    }
+
+    .big-text {
+        font-size: rem(45);        
+    } 
+
     .play-block {
         width: rem(270);
         height: rem(270);
@@ -116,11 +134,6 @@
 
     .play-circle__inner::after {
         @include absolute($tp: 6px, $rt: 8px);
-    }
-
-    .video-section__descript {
-        padding: rem(24) rem(50) rem(34);
-        font-size: rem(45);
     }
 }
 
@@ -144,18 +157,21 @@
     .video-section {       
         &__screen {
             width: 63%;
-        }
-        
-        &__descript {            
-            font-size: rem(40);
-        }
+        }       
+    } 
+
+    .big-text {
+        font-size: rem(40);        
     } 
 }
 
 @media screen and (max-width: 880px) {
-    .video-section__descript {
+    .video-section>:nth-child(2) {
         padding: rem(20) rem(50) rem(30);
-        font-size: rem(35);
+    }
+
+    .big-text {
+        font-size: rem(35);        
     }
 
     .play-block {
@@ -179,7 +195,7 @@
             width: 70%;
         }
 
-        &__descript {
+        &>:nth-child(2) {
             padding-top: rem(15);            
         }
     } 
@@ -191,8 +207,8 @@
 }
 
 @media screen and (max-width: 690px) {
-    .video-section__descript {        
-        font-size: rem(30);
+    .big-text {
+        font-size: rem(30);        
     }
 
     .signature {
@@ -206,10 +222,13 @@
             width: 80%;
         } 
 
-        &__descript {
-            padding: rem(10) rem(30) rem(25);  
-            font-size: rem(27);          
+        &>:nth-child(2) {
+            padding: rem(10) rem(30) rem(25);                        
         }
+    }
+
+    .big-text {
+        font-size: rem(27);        
     }
 
     .play-block {
@@ -239,11 +258,14 @@
             width: 90%;
         } 
 
-        &__descript {
-            font-size: rem(25);
+        &>:nth-child(2) {            
             padding-left: rem(15);
             padding-right: rem(15);
         }
+    }
+
+    .big-text {
+        font-size: rem(25);       
     }
 
     .play-block {
@@ -267,11 +289,11 @@
         &__screen {
             width: 100%;
         }
-
-        &__descript {
-            font-size: rem(20);
-        }
     } 
+
+    .big-text {
+        font-size: rem(20);      
+    }
 
     .play-block {
         width: rem(140);

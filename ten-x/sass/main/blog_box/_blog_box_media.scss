@@ -1,6 +1,5 @@
 @media screen and (max-width: 1800px) {
-    $postTitleFs: rem(40.7);
-    $postTxtFs: rem(20.4);
+    $postTitleFs: rem(40.7);    
 
     .post-01 {
         &__title {
@@ -8,7 +7,7 @@
         }
 
         &__txt {
-            font-size: $postTxtFs;            
+            font-size: rem(20.4);            
         }
     }    
 
@@ -27,8 +26,7 @@
 }
 
 @media screen and (max-width: 1700px) {
-    $postTitleFs: rem(37.4);
-    $postTxtFs: rem(19.3);
+    $postTitleFs: rem(37.4);    
 
     .post-01 {
         &__title {
@@ -36,7 +34,7 @@
         }
 
         &__txt {
-            font-size: $postTxtFs;            
+            font-size: rem(19.3);            
         }
     }
 
@@ -55,8 +53,7 @@
 }
 
 @media screen and (max-width: 1600px) {
-    $postTitleFs: rem(34.1);
-    $postTxtFs: rem(18.2);
+    $postTitleFs: rem(34.1);    
 
     .post-01 {
         &__title {
@@ -64,7 +61,7 @@
         }
 
         &__txt {
-            font-size: $postTxtFs;            
+            font-size: rem(18.2);            
         }
     }
 
@@ -83,8 +80,7 @@
 }
 
 @media screen and (max-width: 1280px) {
-    $postTitleFs: rem(31.5);
-    $postTxtFs: rem(17);
+    $postTitleFs: rem(31.5);    
 
     .post-01 {
         &__title {
@@ -92,7 +88,7 @@
         }
 
         &__txt {
-            font-size: $postTxtFs;                       
+            font-size: rem(17);                       
         }
     }
 
@@ -111,8 +107,7 @@
 }
 
 @media screen and (max-width: 1150px){
-    $postTitleFs: rem(24.8);
-    $postTxtFs: rem(14.7);
+    $postTitleFs: rem(24.8);    
 
     .post-01 {
         &__title {
@@ -120,7 +115,7 @@
         }
 
         &__txt {
-            font-size: $postTxtFs;                            
+            font-size: rem(14.7);                            
         }
     }
 
@@ -139,8 +134,7 @@
 }
 
 @media screen and (max-width: 960px){
-    $postTitleFs: rem(21.5);
-    $postTxtFs: rem(13.5);
+    $postTitleFs: rem(21.5);    
 
     .post-01 {
         &__title {
@@ -148,7 +142,7 @@
         }
 
         &__txt {
-            font-size: $postTxtFs;                               
+            font-size: rem(13.5);                               
         }
     }
 
@@ -167,8 +161,7 @@
 }
 
 @media screen and (max-width: 880px){
-    $postTitleFs: rem(18);
-    $postTxtFs: rem(12.3);
+    $postTitleFs: rem(18);    
 
     .post-01 {
         &__title {
@@ -176,7 +169,7 @@
         }
 
         &__txt {
-            font-size: $postTxtFs;                       
+            font-size: rem(12.3);                       
         }
     }
 
@@ -186,8 +179,7 @@
 }
 
 @media screen and (max-width: 780px) {
-    $postTitleFs: rem(34.1);
-    $postTxtFs: rem(18.2);
+    $postTitleFs: rem(34.1);    
 
     .blog-box {
         padding-bottom: 80%;
@@ -216,7 +208,7 @@
         }
 
         &__txt {
-            font-size: $postTxtFs;  
+            font-size: rem(18.2);  
             padding-right: 0;                                
         }
     }   
@@ -259,8 +251,7 @@
 }
 
 @media screen and (max-width: 690px) {
-    $postTitleFs: rem(24.8);
-    $postTxtFs: rem(16.5);
+    $postTitleFs: rem(24.8);   
 
     .blog-box {
         padding-bottom: 75%;
@@ -272,7 +263,7 @@
         }
 
         &__txt {
-            font-size: $postTxtFs;                                  
+            font-size: rem(16.5);                                  
         }
     }
 
@@ -291,8 +282,7 @@
 }
 
 @media screen and (max-width: 490px) {
-    $postTitleFs: rem(22);
-    $postTxtFs: rem(15); 
+    $postTitleFs: rem(22);   
 
     .post-01 {
         &__title {
@@ -300,7 +290,7 @@
         }
 
         &__txt {
-            font-size: $postTxtFs;                                  
+            font-size: rem(15);                                  
         }
     }
 
@@ -319,8 +309,7 @@
 }
 
 @media screen and (max-width: 390px) {
-    $postTitleFs: rem(18);
-    $postTxtFs: rem(13.5);
+    $postTitleFs: rem(18);    
 
     .post-01 {
         &__title {
@@ -328,7 +317,7 @@
         }
 
         &__txt {
-            font-size: $postTxtFs;    
+            font-size: rem(13.5);    
         }
     }
 

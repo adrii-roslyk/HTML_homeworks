@@ -80,8 +80,8 @@
 
 @keyframes arrive {
     from {
-        transform: translateX(rem(150));
-        opacity: .4;
+        transform: translateX(rem(200));
+        opacity: 0;
     }
     to {
         transform: translateX(0);
@@ -95,14 +95,14 @@
         opacity: 1;
     }
     to {
-        transform: translateX(rem(-150));
+        transform: translateX(rem(-200));
         opacity: 0;
     }
 }
 
 @keyframes arrive-inv {
     from {
-        transform: translateX(rem(-150));
+        transform: translateX(rem(-200));
         opacity: 0;
     }
     to {
@@ -131,5 +131,128 @@
         height: 100%;
         background-color: rgba(172, 55, 142, 0.02);
     }    
+}
+
+@keyframes move-advsld-left-e3 {
+    from {
+        transform: none;
+    }
+    to {
+        transform: translateX(-25.812%);
+    }
+}
+
+@keyframes move-advsld-right-e3 {
+    from {
+        transform: translateX(-25.812%);
+    }
+    to {
+        transform: none;
+    }
+}
+
+@keyframes move-advsld-left-e2-near {
+    from {
+        transform: translateX(-25.812%);
+    }
+    to {
+        transform: translateX(-51.624%);
+    }
+}
+
+@keyframes move-advsld-right-e2-near {
+    from {
+        transform: translateX(-51.624%);
+    }
+    to {
+        transform: translateX(-25.812%);
+    }
+}
+
+@keyframes move-advsld-right-e2 {
+    from {
+        transform: translateX(-51.624%);
+    }
+    to {
+        transform: none;
+    }
+}
+
+@keyframes move-advsld-left-e2 {
+    from {
+        transform: none;
+    }
+    to {
+        transform: translateX(-51.624%);
+    }
+}
+
+@keyframes move-advsld-right-e1 {
+    from {
+        transform: translateX(-77.436%);
+    }
+    to {
+        transform: none;
+    }
+}
+
+@keyframes move-advsld-left-e1 {
+    from {
+        transform: none;
+    }
+    to {
+        transform: translateX(-77.436%);
+    }
+}
+
+@keyframes move-advsld-right-e1-far {
+    from {
+        transform: translateX(-77.436%);
+    }
+    to {
+        transform: translateX(-25.812%);
+    }
+}
+
+@keyframes move-advsld-left-e1-far {
+    from {
+        transform: translateX(-25.812%);
+    }
+    to {
+        transform: translateX(-77.436%);
+    }
+}
+
+@keyframes move-advsld-right-e1-near {
+    from {
+        transform: translateX(-77.436%);
+    }
+    to {
+        transform: translateX(-51.624%);
+    }
+}
+
+@keyframes move-advsld-left-e1-near {
+    from {
+        transform: translateX(-51.624%);
+    }
+    to {
+        transform: translateX(-77.436%);
+    }
+}
+
+@keyframes  advantage-on {
+    0% {
+        opacity: 0;
+    }
+    15% {
+        opacity: 1;
+    }
+    85% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 

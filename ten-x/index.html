@@ -135,19 +135,19 @@
                         <p class="main-slider__descript">your presence</p>
                     </div>
                     <div class="dots">
-                        <div class="dots__item" id="dot1">
+                        <div class="dots__item dots__item--main-sl" id="main-sl-dot-01">
                             <div class="dots__inner"></div>
                             <div class="dots__outer"></div>
                         </div>
-                        <div class="dots__item" id="dot2">
+                        <div class="dots__item dots__item--main-sl" id="main-sl-dot-02">
                             <div class="dots__inner"></div>
                             <div class="dots__outer"></div>
                         </div>
-                        <div class="dots__item" id="dot3">
+                        <div class="dots__item dots__item--main-sl" id="main-sl-dot-03">
                             <div class="dots__inner"></div>
                             <div class="dots__outer"></div>
                         </div>
-                        <div class="dots__item" id="dot4">
+                        <div class="dots__item dots__item--main-sl" id="main-sl-dot-04">
                             <div class="dots__inner"></div>
                             <div class="dots__outer"></div>
                         </div>                       
@@ -190,7 +190,7 @@
                             </div>
                         </div>                        
                     </div>
-                    <p class="video-section__descript">
+                    <p class="big-text">
                         We're a designer & a developer who love building cool stuff with our clients.
                     </p>
                     <img class="signature" src="img/signature.png" alt="signature">
@@ -457,59 +457,104 @@
             </div>
 <!--end_projects-box_block---------------------------------------------------->            
 <!--contact-box_block---------------------------------------------------->
-            <div class="contact">
-                <h2 class="contact__title">services we specialize in</h2>
-                <p class="contact__tagline">Expert input for maximum growth.</p>
-                <nav class="contact__nav">
+            <div class="contact-box">
+                <h2 class="contact-box__title">services we specialize in</h2>
+                <p class="big-text">Expert input for maximum growth.</p>
+                <nav class="contact-box__nav">
                     <ul class="nav-list">
-                        <li class="nav-list__item"><a href="#">DIGITAL</a></li>
+                        <li class="nav-list__item"><a href="#">digital</a></li>
                         <li class="nav-list__item"><span>/</span></li>
-                        <li class="nav-list__item"><a href="#">DESIGN</a></li>
+                        <li class="nav-list__item"><a href="#">design</a></li>
                         <li class="nav-list__item"><span>/</span></li>
-                        <li class="nav-list__item"><a href="#">MARKETING</a></li>
+                        <li class="nav-list__item"><a href="#">marketing</a></li>
                         <li class="nav-list__item"><span>/</span></li>
-                        <li class="nav-list__item"><a href="#">ECOMMERCE</a></li>
+                        <li class="nav-list__item"><a href="#">ecommerce</a></li>
                         <li class="nav-list__item"><span>/</span></li>
-                        <li class="nav-list__item"><a href="#">BRANDING</a></li>
+                        <li class="nav-list__item"><a href="#">branding</a></li>
                     </ul>
                 </nav>
-                <div class="button">
-                    <button>VIEW PRICING DETAILS</button>
+                <div class="pink-button">
+                    <div class="pink-button__inner">
+                        <button class="pink-button__button">view pricing details</button>
+                    </div>                    
                 </div>
-                <div class="contact__slider">
-                    <div class="boxed-slider">
-                        <div class="boxed-slider__content">
-                            <div class="card-block">
-                                <div class="card-block__icon"></div>
-                                <h3 class="card-block__name"></h3>
-                                <p class="card-block__descript"></p>
-                            </div>
-                            <div class="card-block">
-                                <div class="card-block__icon"></div>
-                                <h3 class="card-block__name"></h3>
-                                <p class="card-block__descript"></p>
-                            </div>
-                            <div class="card-block">
-                                <div class="card-block__icon"></div>
-                                <h3 class="card-block__name"></h3>
-                                <p class="card-block__descript"></p>
-                            </div>
+                <div class="advantages-slider">                    
+                    <ul class="advantages-slider__wrap" id="adv-slider-wrap">                        
+                        <li class="advantages-slider__item">
+                            <div class="advantage">
+                                <div class="advantage__background"></div>
+                                <img class="advantage__icon advantage__icon--agility" src="img/icon_laptop.png" alt="">
+                                <h3 class="advantage__name">Agility</h3>
+                                <p class="advantage__descript">
+                                    We believe in a seamless client partnership that 
+                                    connects us into a single unified team. We're not only
+                                    agile in code but in discovery, and design.
+                                </p>
+                            </div>                        
+                        </li>
+                        <li class="advantages-slider__item">
+                            <div class="advantage">
+                                <div class="advantage__background"></div>
+                                <img class="advantage__icon advantage__icon--team" src="img/icon_briefcase.png" alt="">
+                                <h3 class="advantage__name">Team</h3>
+                                <p class="advantage__descript">
+                                    Our dedicated team model ensures that every project 
+                                    receives the meticulous attention and resource it
+                                    deserves from our Strategists, Desiners, Producers,
+                                    Engineers, & Filmmakers.
+                                </p>
+                            </div>                        
+                        </li>    
+                        <li class="advantages-slider__item">
+                            <div class="advantage">
+                                <div class="advantage__background"></div>
+                                <img class="advantage__icon advantage__icon--collaboration" src="img/icon_chat.png" alt="">
+                                <h3 class="advantage__name">Collaboration</h3>
+                                <p class="advantage__descript">
+                                    Nothing we do is in isolation. Our process is 
+                                    extremely collaborative, leveraging our clients
+                                    unique perspectives to activate our own expertise.
+                                </p>
+                            </div>                        
+                        </li>    
+                        <li class="advantages-slider__item">
+                            <div class="advantage">
+                                <div class="advantage__background"></div>
+                                <img class="advantage__icon advantage__icon--team" src="img/icon_laptop.png" alt="">
+                                <h3 class="advantage__name">Lorem</h3>
+                                <p class="advantage__descript">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing 
+                                    elit. Excepturi error, laboriosam magnam labore pariatur 
+                                    voluptas eligendi natus blanditiis perferendis.
+                                </p>
+                            </div>                        
+                        </li>  
+                    </ul>                                               
+                    <div class="dots">
+                        <div class="dots__item dots__item--adv" id="adv-dot-01">
+                            <div class="dots__inner"></div>
+                            <div class="dots__outer"></div>
                         </div>
-                        <div class="boxed-slider__dots">
-                            <div class="dots">
-                                <span class="dots__item" onclick="currentSlide(1)"></span>
-                                <span class="dots__item" onclick="currentSlide(2)"></span>
-                                <span class="dots__item" onclick="currentSlide(3)"></span>
-                                <span class="dots__item" onclick="currentSlide(4)"></span>
-                            </div>
+                        <div class="dots__item dots__item--adv" id="adv-dot-02">
+                            <div class="dots__inner"></div>
+                            <div class="dots__outer"></div>
                         </div>
+                        <div class="dots__item dots__item--adv" id="adv-dot-03">
+                            <div class="dots__inner"></div>
+                            <div class="dots__outer"></div>
+                        </div>
+                        <div class="dots__item dots__item--adv" id="adv-dot-04">
+                            <div class="dots__inner"></div>
+                            <div class="dots__outer"></div>
+                        </div>                       
                     </div>
                 </div>
-                <p class="email-block">
+                <p class="contact-box__link">
                     If you'd like to get in touch,
                     you can send ud an email directly at
-                    <a class="email-block__link" href="mailto:hello@10x.com">hello@10x<span
-                            class="email-block__dot">.</span>com</a>
+                    <a class="email" href="mailto:hello@10x.com">
+                        hello@10x<span class="email__dot">.</span>com
+                    </a>
                 </p>
             </div>
 <!--end_contact_block---------------------------------------------------->
@@ -526,9 +571,10 @@
     </footer>
 <!--end_footer//////////////////////////////////////////////////-->
     <script src="js/toggle_menu.js"></script>
-    <script src="js/slider.js"></script>   
+    <script src="js/main_slider.js"></script>   
     <script src="js/toggle_blog.js"></script> 
     <script src="js/toggle_project.js"></script> 
+    <script src="js/advantages_slider.js"></script>
 </body>
 
 </html>
