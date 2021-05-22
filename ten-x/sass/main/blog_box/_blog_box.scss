@@ -173,41 +173,20 @@
     }
 }
 
-.orange-btn {    
-    width: rem(200);            
+.btn {   
+    &--orange {
+        width: rem(200);
+    }    
 
-    &__inner {        
-        position: relative;
-        width: 100%;
-        padding-top: 27%;
+    &__inner--orange {        
+        padding-top: 27%;        
     }
 
-    &__button {
-        @include absolute($tp: 0);
-        width:100%;
-        height:100%;
-        @include font($ff: $proxNovSbld, $fs: rem(14), $ls: 2.9px);            
-        color: $txtContColor;
-        user-select: none;
-        text-transform: uppercase;
-        border: none;
-        border-radius: 2px;
-        background-image: linear-gradient(35deg, $btnOrngDark 30%, $btnOrngLight 70%);    
-        will-change: transform;      
+    &__button--orange {
+        background-image: linear-gradient(35deg, $btnOrngDark 30%, $btnOrngLight 70%);
         
         &:hover {
-            background-image: none;
             background-color: $btnOrngLight;
-        }
-
-        &:active {
-            transform: scale(0.98);            
-            //box-shadow: inset 0px 0px 3px 0px $btnOrngDark;
-            //border: 1px solid $btnOrngDark;
-        }
-
-        &:focus {
-            outline: none;
         }   
     } 
 }

@@ -1,0 +1,38 @@
+.footer-box {
+    padding: 0.5% 0 10%;
+
+    &__links-row {
+        padding: 3.3% 0 2.4%;
+    }
+}
+
+.logo--bottom {
+    max-width: max-content;
+    margin: 0 auto;       
+}
+
+.menu--bottom {
+    position: relative;
+    width: 35.556%;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 4.723% 0;
+
+    &::before {
+        @extend %menu-line;
+        left: -78.125%;      
+        background-image: linear-gradient(90deg, $linePink 10%, $linkActColor 90%);
+    }
+
+    &::after {
+        @extend %menu-line;
+        right: -78.125%;  
+        background-image: linear-gradient(90deg, $linkActColor 10%, $linePink 90%);  
+    }
+}
+
+.socials--horizontal {
+    margin: 0 auto;
+    width: 13.973%;
+    min-width: 227px;
+}

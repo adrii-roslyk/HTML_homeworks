@@ -7,17 +7,13 @@
         max-width: 1000px;
         height: 100%;
         max-height: 463px;        
-        background-color: $trnspBlack;
+        background-color: $trnspBlack;        
         @include flex($jc: center, $ai: center);        
     }
 
     &__container {
         position: relative;
         padding-top: 46.3%;
-    }
-
-    &>:nth-child(2) {        
-        padding: rem(49) rem(70) rem(59);                       
     }
 }
 
@@ -47,13 +43,16 @@
         }
         
         &--static {            
-            width: 39.4%;
+            width: 39.4%;            
             max-width: 159px;
             height: 39.4%;
             max-height: 159px;
             border-radius: 50%;
-            background-image: url('../../../img/play_bg.png');
-            background-size: 100%;
+            background: {
+                image: url('../img/play_bg.png');
+                repeat: no-repeat;            
+                size: 100%;
+            } 
             box-shadow: 0px 0px 20px 0px $shadowColor;
             
             &:hover {
@@ -127,7 +126,14 @@
 .big-text {
     @include font($ff: $playDispReg, $fs: rem(70), $lh: 1.429);        
     text-align: center;
-    color: $txtContColor;
+    color: $txtContColor;    
+    padding-left: 3.889%;
+    padding-right: 3.889%;
+
+    &--top {        
+        padding-top: 2.723%;
+        padding-bottom: 3.278%;        
+    }
 }
 
 .signature {

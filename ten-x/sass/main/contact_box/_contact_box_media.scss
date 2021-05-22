@@ -1,4 +1,10 @@
 @media screen and (max-width: 1800px) {
+    .btn {
+        &--pink {
+            width: rem(240.5);
+        }
+    }
+
     .advantage {
         &__name {
             font-size: rem(28);            
@@ -11,6 +17,12 @@
 }
 
 @media screen and (max-width: 1700px) {
+    .btn {
+        &--pink {
+            width: rem(221);
+        }
+    }
+
     .advantage {
         &__name {
             font-size: rem(26);            
@@ -23,6 +35,18 @@
 }
 
 @media screen and (max-width: 1600px) {
+    .contact-box__title {
+        font-size: rem(12.5);
+        letter-spacing: 8px;
+        margin-right: -8px;
+    }
+
+    .btn {
+        &--pink {
+            width: rem(201.5);
+        }
+    }
+
     .advantage {
         &__name {
             font-size: rem(24);            
@@ -35,6 +59,10 @@
 }
 
 @media screen and (max-width: 1440px) {
+    .contact-box__background img {
+        top: 18%;
+    }
+
     .advantages-slider__item::before {
         padding-top: 78%;
     }
@@ -46,12 +74,24 @@
     }
 }
 
+@media screen and (max-width: 1366px) {
+    .contact-box__title {        
+        letter-spacing: 7px;
+        margin-right: -7px;
+    }
+}
+
 @media screen and (max-width: 1280px) {
     .contact-box {
         &__title {
             font-size: rem(12);
         }
-    }
+
+        &__background img {
+            top: 19%;
+            left: rem(-40);            
+        }
+    }        
 
     .advantage {        
         &__descript {
@@ -62,6 +102,18 @@
 }
 
 @media screen and (max-width: 1150px) {
+    .contact-box {
+        &__title {
+            font-size: rem(10);
+            letter-spacing: 5px;
+            margin-right: -5px;
+        }
+
+        &__background img {
+            top: 21%;
+        }
+    }
+
     .advantages-slider__item::before {
         padding-top: 86%;
     }
@@ -72,12 +124,20 @@
         }
 
         &__descript {
-            font-size: rem(13);
+            font-size: rem(13);            
         }
+    }
+
+    .big-text--bottom {
+        padding-top: 31%;
     }
 }
 
 @media screen and (max-width: 960px) {
+    .contact-box__title {
+        font-size: rem(9);               
+    }
+
     .advantage {
         &__name {
             font-size: rem(17);            
@@ -90,6 +150,31 @@
 }
 
 @media screen and (max-width: 880px) {
+    .contact-box {
+        &__title {
+            font-size: rem(8.5); 
+            letter-spacing: 4px;   
+            margin-right: -4px;     
+        }
+
+        &__nav {
+            margin-bottom: 4%;
+        }
+    
+        > :nth-child(4) {
+            margin-bottom: 9.5%;
+        }
+
+        &__background img {
+            top: 25%;
+        }
+    } 
+
+    .big-text--mid {
+        padding-top: 1%;
+        padding-bottom: 2.5%;
+    }
+
     .advantages-slider__item::before {
         padding-top: 91%;
     }
@@ -99,9 +184,37 @@
             font-size: rem(16);            
         }       
     }
+
+    .big-text--bottom {
+        padding-top: 32%;
+    }
 }
 
 @media screen and (max-width: 780px) {
+    .contact-box__background img {
+        top: 34%;
+    }
+
+    .nav-list {        
+        width: 48%;
+        max-width: 317px;
+        margin: 0 auto;
+
+        &__item {
+            &:not(:last-child) {            
+                padding-right: 3%;
+            }
+
+            &:nth-child(5) {
+                padding-right: 0;
+            }
+
+            &:nth-child(6) {
+                display: none;
+            }
+        }
+    }
+
     .advantages-slider {  
         &__wrap {
             width: 206.432%;
@@ -123,15 +236,66 @@
     }
 }
 
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 760px) {
+    .contact-box {
+        &__title {
+            font-size: rem(9);        
+        }
+
+        &__background img {
+            left: rem(-30);
+        }
+    } 
+}
+
+@media screen and (max-width: 690px) {  
+    .contact-box__background img {
+        top: 35%;
+    }
+
+    .btn {
+        &--pink {
+            width: rem(159.9);
+        }
+    }
+
     .advantage {
         &__name {
             font-size: rem(18);            
         }
     }
+
+    .big-text--bottom {
+        padding-top: 34%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .contact-box__title {
+        font-size: rem(9.3);        
+    }
 }
 
 @media screen and (max-width: 590px) {
+    .contact-box {
+        > :nth-child(4) {
+            margin-bottom: 10.5%;
+        }
+
+        &__background img {
+            top: 40%;
+        }
+    }
+
+    .big-text--mid {
+        padding-top: 2%;
+        padding-bottom: 3.5%;
+    }
+
+    .nav-list {          
+        width: 52%;     
+    }
+
     .advantages-slider__item::before {
         padding-top: 103%;
     }
@@ -143,7 +307,32 @@
     }
 }
 
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 490px) {  
+    .contact-box {
+        > :nth-child(4) {
+            margin-bottom: 11%;
+        }
+
+        &__background img {
+            top: 49%;
+        }
+    }
+
+    .big-text--mid {
+        padding-top: 3%;
+        padding-bottom: 5%;
+    }
+
+    .nav-list {
+        width: 61%;     
+    }
+
+    .btn {
+        &--pink {
+            width: rem(135.2);
+        }
+    }
+
     .advantages-slider {        
         &__wrap {
             width: 442.91%;
@@ -167,6 +356,10 @@
 }
 
 @media screen and (max-width: 430px) {
+    .nav-list {
+        width: 68%;        
+    }
+    
     .advantage {
         &__name {
             font-size: rem(24);            
@@ -176,9 +369,32 @@
             font-size: rem(15);            
         }
     }
+
+    .big-text--bottom {
+        padding-top: 40%;
+    }
 }
 
 @media screen and (max-width: 390px) {
+    .contact-box {
+        > :nth-child(4) {
+            margin-bottom: 12%;
+        }
+
+        &__background img {
+            top: 52%;
+        }
+    }
+
+    .big-text--mid {
+        padding-top: 4%;
+        padding-bottom: 6%;
+    }
+
+    .nav-list {
+        width: 85%;        
+    }
+
     .advantages-slider__item::before {
         padding-top: 78%;
     }
@@ -192,6 +408,10 @@
             font-size: rem(14);  
             line-height: 1.55;          
         }
+    }
+
+    .big-text--bottom {
+        padding-top: 45%;
     }
 }
 

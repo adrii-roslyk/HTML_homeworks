@@ -1,12 +1,11 @@
 .main-slider {
-    position: relative;
-    overflow: hidden;
+    position: relative;    
 
     &__item {
         width: 70%;
         max-width: 1195px;
         min-width: 265px;
-        margin: 0 auto;              
+        margin: 0 auto;          
     }
     
     &__img {

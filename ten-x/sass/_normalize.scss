@@ -13,7 +13,15 @@ li {
 }
 
 a {
-    text-decoration: none;    
+    text-decoration: none;  
+    
+    &:hover {
+        color: $linkHvrColor;
+    }
+
+    &:active {
+        color: $linkActColor;
+    }
 }
 
 a, button {

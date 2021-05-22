@@ -11,9 +11,11 @@
         }
     }    
 
-    .orange-btn {
-        width: rem(185);
-        
+    .btn {
+        &--orange {
+            width: rem(185);
+        }
+                
         &__button {
             font-size: rem(13.23);
             letter-spacing: 2.7px;
@@ -38,8 +40,10 @@
         }
     }
 
-    .orange-btn {
-        width: rem(170);  
+    .btn {
+        &--orange {
+            width: rem(170); 
+        }         
         
         &__button {
             font-size: rem(12.45);
@@ -65,9 +69,11 @@
         }
     }
 
-    .orange-btn {
-        width: rem(155);
-        
+    .btn {
+        &--orange {
+            width: rem(155);
+        }
+                
         &__button {
             font-size: rem(11.7);
             letter-spacing: 2.25px;
@@ -92,10 +98,12 @@
         }
     }
 
-    .orange-btn {
-        width: rem(143);
-        
-        &__button {
+    .btn {
+        &--orange {
+            width: rem(143);
+        }
+                
+        &__button--orange {
             font-size: rem(10.9);
             letter-spacing: 2px;
         }        
@@ -119,10 +127,12 @@
         }
     }
 
-    .orange-btn {
-        width: rem(123);
-        
-        &__button {
+    .btn {
+        &--orange {
+            width: rem(123);
+        }
+                
+        &__button--orange {
             font-size: rem(9.7);
             letter-spacing: 1.6px;
         }        
@@ -146,10 +156,12 @@
         }
     }
 
-    .orange-btn {
-        width: rem(104);
-        
-        &__button {
+    .btn {
+        &--orange {
+            width: rem(104);
+        }
+                
+        &__button--orange {
             font-size: rem(8.5);
             letter-spacing: 1.3px;
         }        
@@ -235,11 +247,13 @@
         }
     }
 
-    .orange-btn {
-        width: rem(155);
-        margin: 0 auto;
-        
-        &__button {
+    .btn {
+        &--orange {
+            width: rem(155);
+            margin: 0 auto;
+        }
+                
+        &__button--orange {
             font-size: rem(11.7);
             letter-spacing: 2.25px;
         }        
@@ -267,9 +281,11 @@
         }
     }
 
-    .orange-btn {
-        width: rem(123);
-        
+    .btn {
+        &--orange {
+            width: rem(123);
+        }
+                
         &__button {
             font-size: rem(9.7);
             letter-spacing: 1.6px;
@@ -294,9 +310,11 @@
         }
     }
 
-    .orange-btn {
-        width: rem(104);
-        
+    .btn {
+        &--orange {
+            width: rem(104);
+        }
+                
         &__button {
             font-size: rem(8.5);
             letter-spacing: 1.3px;
@@ -319,16 +337,7 @@
         &__txt {
             font-size: rem(13.5);    
         }
-    }
-
-    .orange-btn {
-        width: rem(104);
-        
-        &__button {
-            font-size: rem(8.5);
-            letter-spacing: 1.3px;
-        }        
-    }
+    }    
 
     .number {
         font-size: $postTitleFs;

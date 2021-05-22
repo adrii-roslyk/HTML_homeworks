@@ -48,7 +48,7 @@ function showSlides(direction) {
     if (firstIteration) {
         slides[slideIndex - 1].style.cssText = "animation: leave .5s 3.5s;";
         firstIteration = false;
-    } else if (direction == "back") {
+    } else if (direction === "back") {
         slides[slideIndex - 1].style.cssText = "animation: arrive-inv .5s, leave .5s 3.5s;";
     } else {
         slides[slideIndex - 1].style.cssText = "animation: arrive .5s, leave .5s 3.5s;";

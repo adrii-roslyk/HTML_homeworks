@@ -2,15 +2,7 @@
     @include font($ff: $latoBld, $fs: 15px, $lh: 0.9, $ls: 3px);    
     text-transform: uppercase;
     color: $menuGrey;
-    user-select: none;
-
-    &:hover {
-        color: $linkHvrColor;                       
-    }
-
-    &:active {
-        color: $linkActColor;
-    }
+    user-select: none;   
 }
 
 %circle-border {
@@ -37,3 +29,9 @@
     }    
 }
 
+%menu-line {
+    content: '';
+    @include absolute($tp: calc(50% - 1px)); 
+    width: 78.125%;
+    height: 1px;
+}

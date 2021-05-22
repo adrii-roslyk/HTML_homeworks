@@ -1,26 +1,87 @@
 .contact-box {
-    padding: 0 3.334% 0;//top bottom  
+    padding: 11.5% 3.334%; 
     text-align: center;  
     color: $txtContColor;
+    position: relative;
 
-    &__title {
-        @include font($ff: $playDispBld, $fs: rem(14), $ls: 9px);
-        font-weight: 700 !important;
-        color: $contBoxPink;
-        text-transform: uppercase;
+    &__title {        
+        @include font($ff: $playDispBld, $fs: rem(13), $ls: 9px, $lh: 1);               
+        margin-right: -9px;
+        color: $contBoxPink;        
+        text-transform: uppercase;        
     }   
+
+    &__nav {
+        margin-bottom: 3%;
+    }
+
+    > :nth-child(4) {
+        margin-bottom: 7.5%;
+    }
+
+    &__background {               
+        img {   
+            @include absolute($tp: 16%, $lf: rem(-60));       
+            width: 100vw;
+            max-width: 1920px;
+            z-index: -10;            
+        }
+    }
+}
+
+.big-text--mid {
+    padding-top: 0.5%;
+    padding-bottom: 2%;
+}
+
+.nav-list {
+    @include flex($jc: center);
+    flex-wrap: wrap;    
+
+    &__item {    
+        @include flex($ai: center);
+        padding-bottom: rem(16);
+
+        &:not(:last-child) {            
+            padding-right: 1.28%;
+        }
+    }
+
+    &__link, &__slash {
+        @extend .contact-box__title;        
+        color: $txtContColor;       
+    }
+}
+
+.btn {   
+    &--pink {
+        width: rem(260);
+        margin: 0 auto;
+    }    
+
+    &__inner--pink {        
+        padding-top: 20.77%;        
+    }
+
+    &__button--pink {        
+        background-image: linear-gradient(90deg, $linkActColor 0%, $linePink 100%);
+        
+        &:hover {
+            background-color: $linePink;
+        }   
+    } 
 }
 
 .advantages-slider {    
     width: 100%;
-    max-width: 1680px;
-    overflow-x: hidden;
-    text-align: left;
+    max-width: 1680px;    
+    text-align: left;   
 
     &__wrap {
         @include flex();
         width: 134.792%;   
-        will-change: transform;     
+        padding-bottom: 4%;
+        will-change: transform;             
     }
 
     &__item {               
@@ -74,5 +135,35 @@
 
     &__descript {
         @include font($ff: $latoLt, $fs: rem(18), $lh: 1.778);
+    }
+}
+
+.dots__item--adv {
+    .dots__inner {
+        background-color: $txtContColor;
+    }
+}
+
+.big-text--bottom {
+    padding-top: 29.5%;
+}
+
+.email {
+    max-width: max-content;
+    margin: 0 auto;
+    color: $txtContColor;   
+    position: relative;
+
+    &::after {
+        content: '';
+        @include absolute ($lf: 0, $bt: -4px);
+        width: 100%;
+        height: 2px;
+        background:$linkHvrColor;
+
+    }
+
+    &__dot {
+        color: $linkHvrColor;
     }
 }
