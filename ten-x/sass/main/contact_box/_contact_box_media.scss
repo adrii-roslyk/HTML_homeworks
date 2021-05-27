@@ -190,6 +190,12 @@
     }
 }
 
+@media screen and (max-width: 800px) {
+    .advantages-slider__item::before {
+        padding-top: 96%;
+    }
+}
+
 @media screen and (max-width: 780px) {
     .contact-box__background img {
         top: 34%;
